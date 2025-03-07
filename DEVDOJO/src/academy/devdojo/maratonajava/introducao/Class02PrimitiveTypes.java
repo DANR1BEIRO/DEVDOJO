@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula02TiposPrimitivos {
+public class Class02PrimitiveTypes {
     public static void main(String[] args) {
 
         byte byteNumber = 127; // -128 to 127
