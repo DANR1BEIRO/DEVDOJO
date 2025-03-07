@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula3TiposPrimitivosExercicio {
+public class Class03PrimitiveTypesExercises {
     public static void main(String[] args) {
 
         String name = "Goku";
