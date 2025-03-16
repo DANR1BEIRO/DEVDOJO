@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.introducao;
+package academy.devdojo.maratonajava.introduction.class01PrimitiveTypes;
 
 public class Class02PrimitiveTypes {
     public static void main(String[] args) {
