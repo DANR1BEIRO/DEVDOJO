@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.introducao;
+package academy.devdojo.maratonajava.introduction.class02Operators;
 
-public class Class04Operators {
+public class Class01Operators {
     public static void main(String[] args) {
         // + - * /
         int number1 = 50;
