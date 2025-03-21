@@ -18,7 +18,6 @@ public class QuickChallengeArrays4x4Diagonal {
         * */
 
         int rowIndex = 0;
-        int size = matrix.length;
 
         for (int[] row : matrix){
             int columnIndex = 0;
@@ -33,7 +32,10 @@ public class QuickChallengeArrays4x4Diagonal {
         }
 
         System.out.println();
+
         int rowIndex2 = 0;
+        int size = matrix.length;
+
         for (int[] row : matrix){
             int columnIndex = size - 1 - rowIndex2;
             System.out.println(matrix[rowIndex2][columnIndex]);
