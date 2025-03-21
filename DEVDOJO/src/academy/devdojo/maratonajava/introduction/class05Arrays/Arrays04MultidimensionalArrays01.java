@@ -3,16 +3,24 @@ package academy.devdojo.maratonajava.introduction.class05Arrays;
 public class Arrays04MultidimensionalArrays01 {
     public static void main(String[] args) {
 
-        int[][] days = new int[3][3];
+        int[][] matrix = new int[3][3];
 
-        //   i  j
-        days[0][0] = 31;
-        days[0][1] = 28;
-        days[0][2] = 31;
+        //     i  j
+        matrix[0][0] = 1;
+        matrix[0][1] = 2;
+        matrix[0][2] = 3;
+        
+        matrix[1][0] = 4;
+        matrix[1][1] = 5;
+        matrix[1][2] = 6;
+        
+        matrix[2][0] = 7;
+        matrix[2][1] = 8;
+        matrix[2][2] = 9;
 
-        for (int i = 0; i < days.length; i++) {
-            for (int j = 0; j < days[0].length; j++) {
-                System.out.println(days[i][j]);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.println(matrix[i][j]);
             }
         }
     }
