@@ -19,7 +19,7 @@ public class Arrays04MultidimensionalArrays01 {
         matrix[2][2] = 9;
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
+            for (int j = 0; j < matrix[i].length; j++) {
                 System.out.println(matrix[i][j]);
             }
         }
