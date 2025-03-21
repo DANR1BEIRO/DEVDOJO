@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introduction.class05Arrays;
 
-public class Arrays02 {
+public class Arrays02Fori {
     public static void main(String[] args) {
 
         int counter = 1;
@@ -13,8 +13,6 @@ public class Arrays02 {
         for (int i = 0; i < names.length; i++) {
             System.out.println(counter + " - " + names[i]);
             counter++;
-
         }
-
     }
 }
