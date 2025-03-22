@@ -41,5 +41,11 @@ public class QuickChallengeArrays4x4Diagonal {
             System.out.println(matrix[rowIndex2][columnIndex]);
             rowIndex2++;
         }
+
+        System.out.println( );
+
+        for (int i = 0; i < matrix.length ; i++) {
+            System.out.println(matrix[i][i]);
+        }
     }
 }
