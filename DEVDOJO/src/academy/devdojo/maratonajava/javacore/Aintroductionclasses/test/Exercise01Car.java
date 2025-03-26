@@ -26,7 +26,7 @@ public class Exercise01Car {
         car2.model = "GT500 Eleanor";
         car2.year = 1967;
 
-        System.out.println("Car 1:\nName: " + car1.name+"\nModel: "+car1.model+"\nYear: "+car1.year);
-        System.out.println("\nCar 2:\nName: " + car2.name+"\nModel: "+car2.model+"\nYear: "+car2.year);
+        System.out.println("Car 1:\nName: " + car1.name + "\nModel: " + car1.model + "\nYear: " + car1.year);
+        System.out.println("\nCar 2:\nName: " + car2.name + "\nModel: " + car2.model + "\nYear: " + car2.year);
     }
 }
