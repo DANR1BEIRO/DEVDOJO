@@ -41,4 +41,15 @@ public class Calculator {
         System.out.print(number1 + " divided by " + number2 + " is equal to ");
         System.out.println(number1 / number2);
     }
+
+    // method that tries to modify two numbers
+    public void modifyTwoNumbers(int number1, int number2) {
+
+        // number1 and number2 are copies of the original photos
+        number1 = 99; // modify the copy of the first photo
+        number2 = 33; // modify the copy of the second photo
+
+        System.out.println("Inside modifyTwoNumbers");
+        System.out.println("Number 1: " + number1 + "\nNumber 2: " + number2);
+    }
 }
