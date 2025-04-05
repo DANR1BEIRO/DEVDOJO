@@ -24,4 +24,11 @@ public class Calculator {
         int multiply = number1 * number2;
         System.out.println(number1 + " multiply by " + number2 + " is equal to " + multiply);
     }
+
+    public double divideTwoNumbers(double number1, double number2) {
+        if (number2 == 0) {
+            return 0;
+        }
+        return number1 / number2;
+    }
 }

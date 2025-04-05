@@ -5,6 +5,7 @@ import academy.devdojo.maratonajava.javacore.Bintroductionmethods.domain.Calcula
 public class CalculatorTest01 {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
+
         calculator.sumTwoNumbers();
         System.out.println("CalculatorTest01 finished");
 

@@ -9,6 +9,5 @@ public class CalculatorTest02 {
         calculator.multiplyTwoNumbers(10, 20);
         calculator.sumTwoNumbersParameter(80, 5);
         calculator.subtractTwoNumbersParameter(10, 50);
-
     }
 }
