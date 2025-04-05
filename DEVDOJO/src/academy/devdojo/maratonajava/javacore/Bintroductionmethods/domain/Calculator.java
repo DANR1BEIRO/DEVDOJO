@@ -29,6 +29,16 @@ public class Calculator {
         if (number2 == 0) {
             return 0;
         }
+        System.out.print(number1 + " divided by " + number2 + " is equal to ");
         return number1 / number2;
+    }
+
+    public void printDivideTwoNumbers(double number1, double number2) {
+        if (number2 == 0) {
+            System.out.println("Can't divide by zero");
+            return;
+        }
+        System.out.print(number1 + " divided by " + number2 + " is equal to ");
+        System.out.println(number1 / number2);
     }
 }
