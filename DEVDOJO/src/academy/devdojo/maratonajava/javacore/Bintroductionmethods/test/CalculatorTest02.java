@@ -11,4 +11,3 @@ public class CalculatorTest02 {
         calculator.subtractTwoNumbersParameter(10, 50);
     }
 }
-
