@@ -1,4 +1,4 @@
-PARÂMETRO X ARGUMENTO
+__PARÂMETRO X ARGUMENTO__
 
 Parâmetro
 
@@ -25,3 +25,37 @@ preenche o "espaço reservado" do parâmetro.
 
 No exemplo, 5 e 3 são argumentos passados para o método *somar*. O valor 5 é atribuído
 ao parâmetro 'a', e o valor 3 é atribuído ao parâmetro 'b'.
+
+
+__VARARGS__
+
+What Are Varargs?
+
+Varargs, short for variable-length arguments, allow you to pass an arbitrary number of arguments 
+to a method. This is useful when you don’t know in advance how many arguments will be passed.
+
+Syntax:
+To use Varargs, you declare a method parameter with the type followed by three dots (...).
+![img_1.png](img_1.png)
+
+1. How Varargs Work
+
+When you use Varargs, Java treats the arguments as an array. Inside the method, you can access
+the arguments just like you would with an array.
+
+Example:
+![img_3.png](img_3.png)
+
+Usage:
+![img_5.png](img_5.png)
+
+2. Rules for Using Varargs
+
+Only One Varargs Parameter:
+A method can have only one Varargs parameter.
+If there are other parameters, the Varargs parameter must be the last one.
+
+![img_4.png](img_4.png)
+
+
+
