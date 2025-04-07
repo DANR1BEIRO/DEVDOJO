@@ -52,4 +52,31 @@ public class Calculator {
         System.out.println("Inside modifyTwoNumbers");
         System.out.println("Number 1: " + number1 + "\nNumber 2: " + number2);
     }
+
+    /**
+     * Iterate through an array, sum its numbers and display the result
+     * @param numbers: the array
+     */
+    public void sumArrays(int[] numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        System.out.println(sum);
+    }
+
+    /**
+     * VARARGS
+     * Iterate through an array, sum its numbers and display the result
+     * @param numbers: the array
+     * When we use Varargs, Java treats the arguments as an array.
+     */
+
+    public void sumVarArgs(int... numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        System.out.println(sum);
+    }
 }
