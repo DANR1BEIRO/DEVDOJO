@@ -16,7 +16,7 @@ public class Anime {
     public void init(String name, String type, int episode, String genre) {
         this.init(name, type, episode);
         this.genre = genre;
-    }
+       }
 
     public void print() {
 
