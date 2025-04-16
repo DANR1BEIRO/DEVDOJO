@@ -39,4 +39,8 @@ public class Car {
     public double getSpeedLimit() {
         return speedLimit;
     }
+
+    public static void setSpeedLimit(double speedLimit) {
+        Car.speedLimit = speedLimit;
+    }
 }
