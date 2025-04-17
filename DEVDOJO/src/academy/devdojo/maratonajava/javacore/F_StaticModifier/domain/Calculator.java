@@ -3,7 +3,8 @@ package academy.devdojo.maratonajava.javacore.F_StaticModifier.domain;
 public class Calculator {
 
     public static void sum(double number1, double number2) {
-        System.out.println("The sum is: " + (number1 + number2));
+        double sum = number1 + number2;
+        System.out.printf("The sum of %.2f and %.2f is equal to %.2f\n", number1, number2, sum);
     }
 
     public static void subtract(double number1, double number2) {
