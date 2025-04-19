@@ -5,7 +5,20 @@ public class Person {
     private int age;
     private Address address;
 
+    static {
+        System.out.println("Inside the static initialization block of Person (super class)");
+    }
+
+    {
+        System.out.println("Non-static initialization block of Person (super class) 1");
+    }
+
+    {
+        System.out.println("Non-static initialization block of Person (super class) 2");
+    }
+
     public Person(String name) {
+        System.out.println("Inside the constructor of Person (super class)");
         this.name = name;
     }
 

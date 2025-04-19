@@ -4,7 +4,7 @@ import academy.devdojo.maratonajava.javacore.H_Inheritance.domain.Address;
 import academy.devdojo.maratonajava.javacore.H_Inheritance.domain.Employee;
 import academy.devdojo.maratonajava.javacore.H_Inheritance.domain.Person;
 
-public class PersonTest01 {
+public class InheritanceTest01 {
     public static void main(String[] args) {
 
         Address address = new Address();
