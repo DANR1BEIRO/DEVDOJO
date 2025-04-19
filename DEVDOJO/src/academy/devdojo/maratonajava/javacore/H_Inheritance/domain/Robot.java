@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.H_Inheritance.domain;
 
 public class Robot {
-    private String name;
-    private String serialNumber;
+    protected String name;
+    protected String serialNumber;
 
     public Robot() {
     }

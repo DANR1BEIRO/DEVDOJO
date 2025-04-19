@@ -11,10 +11,10 @@ public class SecurityRobot extends Robot {
 
     @Override
     public void powerOn() {
-        System.out.println(this.getName() +  " is powered on and activating security systems.");
+        System.out.println(this.name +  " is powered on and activating security systems.");
     }
 
     public void patrol(){
-        System.out.println(this.getName() + " is patrolling the area.");
+        System.out.println(this.name + " is patrolling the area.");
     }
 }

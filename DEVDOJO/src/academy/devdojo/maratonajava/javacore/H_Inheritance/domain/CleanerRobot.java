@@ -9,7 +9,12 @@ public class CleanerRobot extends Robot {
         super(name, serialNumber);
     }
 
+    @Override
+    public void powerOn() {
+        System.out.println(this.name + " is powered on and activating cleaner systems.");
+    }
+
     public void clean () {
-        System.out.println(this.getName() + " is cleaning the area.");
+        System.out.println(this.name + " is cleaning the area.");
     }
 }
