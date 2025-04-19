@@ -3,6 +3,10 @@ package academy.devdojo.maratonajava.javacore.H_Inheritance.domain;
 public class Employee extends Person {
     private double salary;
 
+    public Employee(String name) {
+        super(name);
+    }
+
     @Override
     public void info() {
         super.info();

@@ -5,6 +5,10 @@ public class Person {
     private int age;
     private Address address;
 
+    public Person(String name) {
+        this.name = name;
+    }
+
     public void info() {
         System.out.println("Name: " + this.name);
         System.out.println("Age: " + this.age);

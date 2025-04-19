@@ -11,16 +11,14 @@ public class PersonTest01 {
         address.setStreet("Rua dos bobos");
         address.setZipCode("1234-56");
 
-        Person person = new Person();
-        person.setName("Vegeta");
+        Person person = new Person("Vegeta");
         person.setAge(15);
         person.setAddress(address);
         person.info();
 
         System.out.println("_____________________");
 
-        Employee employee = new Employee();
-        employee.setName("Goku");
+        Employee employee = new Employee("Goku");
         employee.setAge(15);
         employee.setAddress(address);
         employee.setSalary(2500);
