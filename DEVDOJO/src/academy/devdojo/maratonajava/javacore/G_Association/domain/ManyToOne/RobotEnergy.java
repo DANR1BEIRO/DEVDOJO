@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.G_Association.domain;
+package academy.devdojo.maratonajava.javacore.G_Association.domain.ManyToOne;
 
 public class RobotEnergy {
     public String energy;

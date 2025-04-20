@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.G_Association.domain;
+package academy.devdojo.maratonajava.javacore.G_Association.domain.ManyToOne;
 
-public class Robot {
+public class RobotManyToOne {
     public String name;
     public Supervisor supervisor;
     public RobotEnergy energy;
@@ -16,12 +16,12 @@ public class Robot {
                 "\nSupervisedy by " + this.supervisor.getName());
     }
 
-    public Robot(String name, Supervisor supervisor) {
+    public RobotManyToOne(String name, Supervisor supervisor) {
         this.name = name;
         this.supervisor = supervisor;
     }
 
-    public Robot(String name, Supervisor supervisor, RobotEnergy energy) {
+    public RobotManyToOne(String name, Supervisor supervisor, RobotEnergy energy) {
         this.name = name;
         this.supervisor = supervisor;
         this.energy = energy;
