@@ -1,13 +1,13 @@
 package academy.devdojo.maratonajava.javacore.J_FinalModifier.domain;
 
-public class Car {
+public class Buyer {
     private String name;
-    public static final double SPEED_LIMIT = 250;
-    public final Buyer BUYER = new Buyer();
 
-    // metodo final jamais poderá ser sobrescrito
-    public final void info() {
-        System.out.println(this.name);
+    @Override
+    public String toString() {
+        return "Buyer{" +
+                "name='" + name + '\'' +
+                '}';
     }
 
     public String getName() {
