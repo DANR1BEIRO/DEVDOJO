@@ -15,7 +15,7 @@ O **enum** serve para resolver esse problema! Ele cria um **tipo especial
 de variável** que só aceita valores pré-definidos. Assim, evitamos erros
 e deixamos o código mais organizado.
 
-**Exemplo básico:**
+**Exemplo básico:**<br>
 ![img_1.png](img_1.png)
 
 - Aqui, _RobotState_ é um **enum** com três valores possíveis: **ON, OFF** e **MAINTANCE.**
@@ -55,10 +55,10 @@ Podemos usar enums em estruturas de decisão como _switch case_:
 
 ![img_6.png](img_6.png)
 
-Chamando o método com o switch:
+Chamando o método com o switch:<br>
 ![img_7.png](img_7.png)
 
-Output:
+Output:<br>
 ![img_8.png](img_8.png)
 
 **Resumindo:**
