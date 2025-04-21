@@ -1,10 +1,6 @@
 package academy.devdojo.maratonajava.javacore.K_Enum.domain;
 
 public class Costumer {
-    public enum PaymentType {
-        DEBIT,
-        CREDIT
-    }
 
     private String name;
     private CostumerType costumerType;

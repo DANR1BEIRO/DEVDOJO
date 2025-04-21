@@ -67,5 +67,9 @@ Output:<br>
 - Muito útil para representar estados, tipos, comandos, dias da semana, etc.
 - Pode ter métodos e informações extras.
 
+**Método abstrato dentro de um enum:**
 
+Um método abstrato dentro de um enum obriga cada constante do enum a implementar sua própria versão.
+Isso permite que cada constante tenha um comportamento único para esse método.
+![img_10.png](img_10.png)
 
