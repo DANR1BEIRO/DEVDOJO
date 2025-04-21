@@ -1,35 +1,29 @@
 package academy.devdojo.maratonajava.javacore.K_Enum.domain;
 
 public class Costumer {
+    public enum PaymentType {
+        DEBIT,
+        CREDIT
+    }
+
     private String name;
     private CostumerType costumerType;
+    private PaymentType paymentType;
 
-    public Costumer(String name, CostumerType costumerType) {
+    public Costumer(String name, CostumerType costumerType, PaymentType paymentType) {
         this.name = name;
         this.costumerType = costumerType;
+        this.paymentType = paymentType;
     }
 
     @Override
-    public String   toString() {
+    public String toString() {
         return "Costumer{" +
                 "name='" + name + '\'' +
                 ", costumerType=" + costumerType +
+                ", costumerTypeInt=" + costumerType.KEY +
+                ", costumerTypeDescription=" + costumerType.VALUE +
+                ", paymentType=" + paymentType +
                 '}';
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public CostumerType getCostumerType() {
-        return costumerType;
-    }
-
-    public void setCostumerType(CostumerType costumerType) {
-        this.costumerType = costumerType;
     }
 }
