@@ -21,11 +21,12 @@ public abstract class Robot {
         if (batteryLevel <= 0) {
             System.out.println("Can't turn on! " + name + "'s battery has run out!");
         } else {
+            System.out.println("_______________________");
             System.out.println(name + " turned on!");
         }
     }
 
-    public boolean batteryIsGreaterThan10() {
+    public final boolean batteryIsGreaterThan10() {
         boolean result = (batteryLevel > 10) ? true : false;
         return result;
     }
@@ -53,18 +54,9 @@ public abstract class Robot {
         }
     }
 
-    public void performTask() {
-        if (batteryIsGreaterThan10()) {
-            System.out.println(name + " is cleaning the room!");
-            consumeBattery();
-            System.out.println("This task consumed " + batteryConsumption + " units of the battery!" +
-                    "\nCurrent battery level: " + batteryLevel + " units");
-        } else {
-            System.out.println(name + " doesn't have enough battery to complete this task! needs a recharge!");
-        }
-    }
+    public abstract void performTask();
 
-    public void consumeBattery() {
+    public final void consumeBattery() {
         batteryLevel -= batteryConsumption;
         batteryLevel = (batteryLevel < 0) ? 0 : batteryLevel;
     }

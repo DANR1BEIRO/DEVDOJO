@@ -13,12 +13,14 @@ public class CleaningRobot extends Robot {
 
     @Override
     public void performTask() {
-        super.performTask();
-    }
-
-    @Override
-    public void consumeBattery() {
-        super.consumeBattery();
+        if (batteryIsGreaterThan10()) {
+            System.out.println(name + " is cleaning the room!");
+            consumeBattery();
+            System.out.println("This task consumed " + batteryConsumption + " units of the battery!" +
+                    "\nCurrent battery level: " + batteryLevel + " units");
+        } else {
+            System.out.println(name + " doesn't have enough battery to complete this task! needs a recharge!");
+        }
     }
 
     @Override
