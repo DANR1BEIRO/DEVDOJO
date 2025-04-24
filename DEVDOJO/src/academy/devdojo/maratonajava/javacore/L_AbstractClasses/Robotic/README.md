@@ -50,7 +50,7 @@ Instructions:
 
     In the main method, create an array of Robot containing objects of all concrete classes and demonstrate polymorphism.
 
-Exercise 4: Robot Control System
+<span style="color:green;">&#x2705; </span> Exercise 4: Robot Control System
 
 Objective: Create a system that manages different types of robots.
 

@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.L_AbstractClasses.Robotic;
 
 public class AssemblerRobot extends IndustrialRobot {
-    public AssemblerRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, String sector) {
-        super(name, serialNumber, batteryLevel, batteryConsumption, sector);
+    public AssemblerRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, Status status) {
+        super(name, serialNumber, batteryLevel, batteryConsumption, status);
     }
 
     @Override
@@ -57,6 +57,11 @@ public class AssemblerRobot extends IndustrialRobot {
         } else {
             System.out.println("Cannot start the task!");
         }
+    }
+
+    @Override
+    public void runDiagnostic() {
+        super.runDiagnostic();
     }
 
     @Override

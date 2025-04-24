@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.L_AbstractClasses.Robotic;
 
-public class DeliveryRobot extends Robot {
+public class DeliveryRobot extends ServiceRobot {
 
-    public DeliveryRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption) {
-        super(name, serialNumber, batteryLevel, batteryConsumption);
+    public DeliveryRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, Status status) {
+        super(name, serialNumber, batteryLevel, batteryConsumption, status);
     }
 
     @Override
@@ -21,6 +21,11 @@ public class DeliveryRobot extends Robot {
         } else {
             System.out.println(name + " doesn't have enough battery to complete this task! needs a recharge!");
         }
+    }
+
+    @Override
+    public void runDiagnostic() {
+        super.runDiagnostic();
     }
 
     @Override

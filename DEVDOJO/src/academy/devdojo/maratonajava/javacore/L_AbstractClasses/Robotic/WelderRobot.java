@@ -4,13 +4,8 @@ public class WelderRobot extends IndustrialRobot {
     protected int systemTemperature;
     protected final int MAX_SYSTEM_TEMPERATURE = 100;
 
-    public WelderRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, String sector, int systemTemperature) {
-        super(name, serialNumber, batteryLevel, batteryConsumption, sector);
-        this.systemTemperature = systemTemperature;
-    }
-
-    public WelderRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, String sector) {
-        super(name, serialNumber, batteryLevel, batteryConsumption, sector);
+    public WelderRobot(String name, String serialNumber, int batteryLevel, int batteryConsumption, Status status) {
+        super(name, serialNumber, batteryLevel, batteryConsumption, status);
     }
 
     @Override
@@ -44,6 +39,11 @@ public class WelderRobot extends IndustrialRobot {
 
         System.out.println("This task consumed " + batteryConsumption + " units of the battery!" +
                 "\nCurrent battery level: " + batteryLevel + " units");
+    }
+
+    @Override
+    public void runDiagnostic() {
+        super.runDiagnostic();
     }
 
     @Override

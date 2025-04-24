@@ -6,24 +6,29 @@ public abstract class Robot {
     protected int batteryLevel;
     protected final int MAX_BATTERY_LEVEL = 100;
     protected int batteryConsumption;
+    protected Status status;
 
-    public Robot() {
-    }
-
-    public Robot(String name, String serialNumber, int batteryLevel, int batteryConsumption) {
+    public Robot(String name, String serialNumber, int batteryLevel, int batteryConsumption, Status status) {
         this.name = name;
         this.serialNumber = serialNumber;
         this.batteryLevel = (batteryLevel < 0) ? 0 : batteryLevel;
         this.batteryConsumption = batteryConsumption;
+        this.status = status;
     }
 
     public void turnOn() {
         if (batteryLevel <= 0) {
             System.out.println("Can't turn on! " + name + "'s battery has run out!");
+            status = status.OFF;
         } else {
-            System.out.println("_______________________");
+            status = status.ON;
             System.out.println(name + " turned on!");
         }
+    }
+
+    public void turnOff () {
+        status = status.OFF;
+        System.out.println(name + " was turned off.");
     }
 
     public final boolean batteryIsGreaterThan10() {
@@ -55,6 +60,8 @@ public abstract class Robot {
     }
 
     public abstract void performTask();
+
+    public abstract void runDiagnostic();
 
     public final void consumeBattery() {
         batteryLevel -= batteryConsumption;
