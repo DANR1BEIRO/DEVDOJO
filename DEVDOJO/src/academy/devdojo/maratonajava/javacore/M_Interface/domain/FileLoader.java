@@ -1,0 +1,8 @@
+package academy.devdojo.maratonajava.javacore.M_Interface.domain;
+
+public class FileLoader implements DataLoader {
+    @Override
+    public void load() {
+        System.out.println("Loading data from file");
+    }
+}
