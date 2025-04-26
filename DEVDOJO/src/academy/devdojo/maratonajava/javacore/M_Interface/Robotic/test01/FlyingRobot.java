@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test;
+package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test01;
 
-public class Flying implements MoverRobot {
+public class FlyingRobot implements MoverRobot {
     @Override
     public void turnOn() {
         System.out.println("flying robot is turn on");

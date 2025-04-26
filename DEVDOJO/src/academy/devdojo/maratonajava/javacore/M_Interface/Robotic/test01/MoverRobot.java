@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test;
+package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test01;
 
 public interface MoverRobot {
     void turnOn();

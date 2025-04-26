@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.M_Interface.Robotic;
+package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test02;
 
 public class Main {
     public static void main(String[] args) {
