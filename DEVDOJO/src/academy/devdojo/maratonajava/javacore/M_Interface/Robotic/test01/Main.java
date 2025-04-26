@@ -5,9 +5,10 @@ public class Main {
 
         FlyingRobot flyingRobot = new FlyingRobot();
         SwimmingRobot swimmingRobot = new SwimmingRobot();
-        PrintInstancesThatImplementedInterface printInstancesThatImplementedInterface = new PrintInstancesThatImplementedInterface();
 
-        printInstancesThatImplementedInterface.testRobot(flyingRobot);
-        printInstancesThatImplementedInterface.testRobot(swimmingRobot);
+        PrintInstancesThatImplementedInterface.generateFlyingReport(flyingRobot);
+        System.out.println("______________________");
+        PrintInstancesThatImplementedInterface.generateSwimmingReport(swimmingRobot);
+;
     }
 }

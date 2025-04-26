@@ -6,12 +6,17 @@ public class PrintInstancesThatImplementedInterface {
      * Call all methods from MoverRobot interface
      * @param robot: A object whose class implements the MoverRobot interface
      */
-    public void testRobot(MoverRobot robot) {
-
-        System.out.println("__________________________");
+    public static void generateFlyingReport(MoverRobot robot) {
+        System.out.println("Report for Flying");
         robot.turnOn();
         robot.move();
         robot.turnOff();
-        System.out.println("__________________________");
+    }
+
+    public static void generateSwimmingReport(MoverRobot robot) {
+        System.out.println("Report for Swimming");
+        robot.turnOn();
+        robot.move();
+        robot.turnOff();
     }
 }

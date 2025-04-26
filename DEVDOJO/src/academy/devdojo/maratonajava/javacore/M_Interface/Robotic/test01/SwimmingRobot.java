@@ -13,6 +13,6 @@ public class SwimmingRobot implements MoverRobot {
 
     @Override
     public void move() {
-        System.out.println("swimming robot is swim");
+        System.out.println("swimming robot is swimming");
     }
 }
