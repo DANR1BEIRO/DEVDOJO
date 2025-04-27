@@ -4,9 +4,9 @@ import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Compute
 import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Product;
 import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Tomato;
 
-public class  ProductTaxReport {
+public class ProductTaxReport {
 
-    public static void generateProductTaxReport(Product product){
+    public static void generateProductTaxReport(Product product) {
         System.out.println("Starting the report for product");
         double taxValue = product.calculateTaxValue();
         System.out.println("Product: " + product.getName());
