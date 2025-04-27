@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.N_Polymorphism.domain;
+package academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model;
 
 public class Computer extends Product {
     public static final double TAX_PERCENTAGE = 0.21;

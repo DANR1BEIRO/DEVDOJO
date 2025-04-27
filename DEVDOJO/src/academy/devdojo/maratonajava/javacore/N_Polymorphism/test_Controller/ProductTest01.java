@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava.javacore.N_Polymorphism.test;
+package academy.devdojo.maratonajava.javacore.N_Polymorphism.test_Controller;
 
-import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain.Computer;
-import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain.Product;
-import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain.Tomato;
-import academy.devdojo.maratonajava.javacore.N_Polymorphism.service.ProductTaxReport;
+import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Computer;
+import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Product;
+import academy.devdojo.maratonajava.javacore.N_Polymorphism.domain_Model.Tomato;
+import academy.devdojo.maratonajava.javacore.N_Polymorphism.service_View.ProductTaxReport;
 
 public class ProductTest01 {
     public static void main(String[] args) {
