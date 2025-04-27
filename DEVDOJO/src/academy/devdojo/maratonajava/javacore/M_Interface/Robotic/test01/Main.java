@@ -3,12 +3,22 @@ package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test01;
 public class Main {
     public static void main(String[] args) {
 
-        FlyingRobot flyingRobot = new FlyingRobot();
-        SwimmingRobot swimmingRobot = new SwimmingRobot();
+        Robot flyingRobot = new FlyingRobot();
+        Robot swimmingRobot = new SwimmingRobot();
+        Robot landRobot = new LandRobot();
 
-        PrintInstancesThatImplementedInterface.generateFlyingReport(flyingRobot);
-        System.out.println("______________________");
-        PrintInstancesThatImplementedInterface.generateSwimmingReport(swimmingRobot);
-;
+        Robot[] robots = {
+                flyingRobot,
+                swimmingRobot,
+                landRobot
+        };
+
+        for (Robot robot : robots) {
+            System.out.println("______________________");
+            System.out.println("Inside the for loop:");
+            robot.turnOn();
+            robot.move();
+            robot.turnOff();
+        }
     }
 }

@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test01;
 
-public class SwimmingRobot implements MoverRobot {
+public class SwimmingRobot implements Robot {
     @Override
     public void turnOn() {
         System.out.println("swimming robot is turn on");

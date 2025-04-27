@@ -1,18 +1,21 @@
 package academy.devdojo.maratonajava.javacore.M_Interface.Robotic.test01;
 
-public class FlyingRobot implements Robot {
+public class LandRobot implements Robot {
     @Override
     public void turnOn() {
-        System.out.println("flying robot is turn on");
+        System.out.println("Landing robot is turn on");
+
     }
 
     @Override
     public void turnOff() {
-        System.out.println("flying robot is turn off");
+        System.out.println("Landing robot is turn off");
+
     }
 
     @Override
     public void move() {
-        System.out.println("flying robot is flying");
+        System.out.println("Land robot is moving");
+
     }
 }
