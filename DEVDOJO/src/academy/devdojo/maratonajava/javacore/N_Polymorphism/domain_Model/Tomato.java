@@ -11,6 +11,7 @@ public class Tomato extends Product {
 
     @Override
     public double calculateTaxValue() {
+        System.out.println("Calculating tomato taxes");
         return this.price * TAX_PERCENTAGE;
     }
 
