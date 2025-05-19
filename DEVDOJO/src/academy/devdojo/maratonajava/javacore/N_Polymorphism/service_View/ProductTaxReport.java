@@ -12,6 +12,10 @@ public class ProductTaxReport {
         System.out.println("Product: " + product.getName());
         System.out.println("Price: " + product.getPrice());
         System.out.println("Taxes: " + taxValue);
+        if (product instanceof Tomato) {
+            String bestBefore = ((Tomato) product).getBestBefore();
+            System.out.println(bestBefore);
+        }
     }
 }
 
