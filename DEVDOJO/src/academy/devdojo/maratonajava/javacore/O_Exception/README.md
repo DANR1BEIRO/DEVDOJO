@@ -1,5 +1,31 @@
 ## Exceptions pt1 - Errors (StackOverFlow)
 
+![img_2.png](img_2.png)
+
+Esse diagrama mostra a hierarquia de tratamento de erros e exceções em Java. Ele representa como as principais classes
+relacionadas a erros e exceções estão organizadas na linguagem.
+
+Throwable: É a superclasse de todos os erros e exceções em Java. Tudo que pode ser "lançado" (throw) ou "capturado" 
+(catch) herda de Throwable.
+
+Error: Subclasse de Throwable. Representa erros graves que normalmente não devem ser tratados pelo programa, como 
+problemas do sistema ou da máquina virtual (por exemplo, OutOfMemoryError). São situações que geralmente não podem 
+ser recuperadas.
+
+Exception: Também subclasse de Throwable. Representa condições que um programa pode querer capturar e tratar.
+Dentro de Exception, há duas divisões principais:
+
+RuntimeException: Exceções que ocorrem durante a execução do programa e que normalmente indicam erros de 
+programação, como NullPointerException, NumberFormatException, ClassCastException, IndexOutOfBoundsException, 
+entre outras. Essas exceções não precisam ser declaradas ou capturadas obrigatoriamente (unchecked exceptions).
+Outras exceções: Como IOException, SQLException, MalformedURLException, etc. Essas são chamadas de checked exceptions
+e precisam ser tratadas ou declaradas no código.
+
+Resumo visual:
+
+Azul: Classes base e exceções "checked" (precisam ser tratadas).
+Vermelho: Erros e exceções "unchecked" (não precisam ser tratadas obrigatoriamente).
+
 #### O que é StackOverflowError em Java?
 
 O StackOverflowError é um erro que ocorre quando a pilha de execução (stack) 
