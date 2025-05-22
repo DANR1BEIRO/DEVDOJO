@@ -1,0 +1,21 @@
+package academy.devdojo.maratonajava.javacore.O_Exception.exception.test;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ExceptionTest01 {
+    public static void main(String[] args) {
+        createNewFile();
+    }
+    private static void createNewFile() {
+        File file = new File("file\\test.txt");
+        try {
+            boolean isCreated = file.createNewFile();
+            System.out.println("File created: " + isCreated);
+        } catch (IOException e) {
+            // JAMAIS DEIXE O BLOCK CATCH EM BRANCO
+            // NÃO COLOQUE LÓGICA DE NEGÓCIO NO CATCH
+            e.printStackTrace();
+        }
+    }
+}
