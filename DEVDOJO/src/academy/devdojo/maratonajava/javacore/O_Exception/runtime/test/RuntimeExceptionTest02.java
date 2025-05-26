@@ -3,8 +3,12 @@ package academy.devdojo.maratonajava.javacore.O_Exception.runtime.test;
 public class RuntimeExceptionTest02 {
     public static void main(String[] args) {
 
-        int divisionResult = division(10, 0);
-        System.out.println("Division result: " + divisionResult);
+        try {
+            division(10, 0);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Código finalizado.");
     }
 
     /**

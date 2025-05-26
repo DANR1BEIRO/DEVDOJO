@@ -8,7 +8,7 @@ public class ExceptionTest01 {
         createNewFile();
     }
     private static void createNewFile() {
-        File file = new File("file\\test.txt");
+        File file = new File("testFile\\test01.txt");
         try {
             boolean isCreated = file.createNewFile();
             System.out.println("File created: " + isCreated);
