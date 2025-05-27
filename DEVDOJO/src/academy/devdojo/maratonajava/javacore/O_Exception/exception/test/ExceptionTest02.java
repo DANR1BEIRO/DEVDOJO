@@ -8,7 +8,7 @@ public class ExceptionTest02 {
         createNewFile();
     }
 
-    private static void createNewFile() throws IOException {
+    public static void createNewFile() throws IOException {
         File file = new File("testFile\\test01.txt");
         try {
             boolean isCreated = file.createNewFile();
