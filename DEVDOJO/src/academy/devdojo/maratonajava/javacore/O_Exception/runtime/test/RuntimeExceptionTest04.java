@@ -22,15 +22,12 @@ public class RuntimeExceptionTest04 {
 
         try {
             mayThrowException();
-        } catch (SQLException e) {
-
-        } catch (FileNotFoundException e) {
-
+        } catch (SQLException | FileNotFoundException e) {
+            System.out.println("Tratando SQLException ou FileNotFoundException");
         }
     }
 
     private static void mayThrowException() throws SQLException, FileNotFoundException {
-
     }
 }
 

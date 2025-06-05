@@ -151,3 +151,47 @@ Sempre coloque os blocos catch das exceções mais específicas antes dos mais g
 Se inverter a ordem, o código não compila.
 Use múltiplos blocos catch quando quiser tratar exceções de formas diferentes.
 Se o tratamento for igual, pode usar apenas o bloco mais genérico.
+
+## Exceções Multi-Catch em Linha 
+
+### O que é Multi-Catch?
+
+A partir do Java 7, foi introduzida uma nova sintaxe para tratar múltiplas exceções diferentes no mesmo bloco `catch`, facilitando a legibilidade e manutenção do código.  
+Essa sintaxe é chamada de **multi-catch** e permite capturar exceções que **não estão na mesma hierarquia de herança** em um único bloco, separando os tipos por `|` (pipe).
+
+---
+
+### Exemplo de uso
+
+```java
+try {
+    // código que pode lançar diferentes exceções
+} catch (SQLException | FileNotFoundException e) {
+    System.out.println("Tratando SQLException ou FileNotFoundException");
+}
+```
+
+No exemplo acima, tanto `SQLException` quanto `FileNotFoundException` podem ser capturadas pelo mesmo bloco, desde que não sejam da mesma linha de herança.
+Quando usar?
+
+Use multi-catch quando você deseja dar o mesmo tratamento para diferentes tipos de exceção que não têm relação de herança direta.
+Exemplo prático:
+
+```java
+try {
+    // código que pode lançar IllegalArgumentException ou ArithmeticException
+} catch (IllegalArgumentException | ArithmeticException e) {
+    System.out.println("Tratamento igual para IllegalArgumentException e ArithmeticException");
+}
+```
+
+### Regras importantes:
+
+Não pode usar multi-catch para exceções que têm relação de herança direta (por exemplo, Exception | IOException não é permitido, pois IOException é filha de Exception).
+A variável de exceção (e no exemplo) é final dentro do bloco, ou seja, você não pode atribuir um novo valor a ela.
+O multi-catch serve para simplificar o código quando o tratamento das exceções é igual.
+
+### Vantagens:
+
+Código mais limpo e legível.
+Evita duplicação de código quando o tratamento é o mesmo para diferentes exceções.
