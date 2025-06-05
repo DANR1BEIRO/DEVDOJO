@@ -1,7 +1,5 @@
 ## Exceptions pt1 - Errors 
 
-
-
 ### O que são Exceções?
 Exceções são condições anormais que ocorrem durante a execução de um programa, interrompendo o fluxo normal de instruções.
 
@@ -57,6 +55,7 @@ Resumo visual:
 
 Azul: Classes base e exceções "checked" (precisam ser tratadas).
 Vermelho: Erros e exceções "unchecked" (não precisam ser tratadas obrigatoriamente).
+
 ---
 ## O que é StackOverflowError em Java?
 
@@ -97,7 +96,9 @@ evitando o estouro da pilha.
 O StackOverflowError é um erro comum em programas que usam recursão sem controle. 
 Ele indica que a pilha de chamadas do programa ficou cheia, geralmente por falta 
 de uma condição de parada em métodos recursivos.
+
 ---
+
 ## Tratamento de Exceções: Ordem dos Blocos `catch` em Java
 
 ### Por que a ordem dos blocos `catch` importa?
@@ -149,7 +150,9 @@ Sempre coloque os blocos catch das exceções mais específicas antes dos mais g
 Se inverter a ordem, o código não compila.
 Use múltiplos blocos catch quando quiser tratar exceções de formas diferentes.
 Se o tratamento for igual, pode usar apenas o bloco mais genérico.
+
 ---
+
 ## Exceções Multi-Catch em Linha 
 
 ### O que é Multi-Catch?
@@ -193,8 +196,8 @@ Código mais limpo e legível.
 Evita duplicação de código quando o tratamento é o mesmo para diferentes exceções.
 
 ---
-## Try with Resources em Java
 
+## Try with Resources em Java
 ### O que é Try with Resources?
 
 O **try with resources** é uma estrutura introduzida no Java 7 para facilitar o gerenciamento automático de recursos, como arquivos, conexões de banco de dados, sockets, etc.  
