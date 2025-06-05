@@ -96,3 +96,58 @@ evitando o estouro da pilha.
 O StackOverflowError é um erro comum em programas que usam recursão sem controle. 
 Ele indica que a pilha de chamadas do programa ficou cheia, geralmente por falta 
 de uma condição de parada em métodos recursivos.
+
+
+## Tratamento de Exceções: Ordem dos Blocos `catch` em Java
+
+### Por que a ordem dos blocos `catch` importa?
+
+Em Java, quando usamos múltiplos blocos `catch` para tratar exceções, **a ordem em que eles aparecem é fundamental**. Sempre devemos colocar os blocos que tratam exceções **mais específicas antes dos mais genéricos**.
+
+Se você colocar um bloco `catch` genérico antes de um específico, o compilador vai acusar erro, pois o bloco específico nunca será alcançado.
+
+---
+
+### Exemplo Correto:
+
+```java
+try {
+    throw new RuntimeException();
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Inside ArrayIndexOutOfBoundsException");
+} catch (IndexOutOfBoundsException e) {
+    System.out.println("Inside IndexOutOfBoundsException");
+} catch (IllegalArgumentException e) {
+    System.out.println("Inside IllegalArgumentException");
+} catch (ArithmeticException e) {
+    System.out.println("Inside ArithmeticException");
+} catch (RuntimeException e) { // O mais genérico deve ser o último
+    System.out.println("Inside RuntimeException");
+}
+```
+Neste exemplo, cada exceção mais específica é tratada antes da exceção mais genérica (RuntimeException). Assim, o código compila e funciona corretamente.
+
+### Exemplo Incorreto:
+
+```java
+try {
+    throw new ArrayIndexOutOfBoundsException();
+} catch (RuntimeException e) {
+    System.out.println("Inside RuntimeException");
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Inside ArrayIndexOutOfBoundsException");
+}
+```
+
+Erro de compilação:
+
+error: exception `ArrayIndexOutOfBoundsException has already been caught`
+
+Neste caso, o bloco catch (RuntimeException e) captura todas as exceções do tipo RuntimeException e suas filhas, incluindo ArrayIndexOutOfBoundsException. Por isso, o segundo bloco nunca será executado, gerando erro de compilação.
+
+### Resumo:
+
+Sempre coloque os blocos catch das exceções mais específicas antes dos mais genéricos.
+Se inverter a ordem, o código não compila.
+Use múltiplos blocos catch quando quiser tratar exceções de formas diferentes.
+Se o tratamento for igual, pode usar apenas o bloco mais genérico.
