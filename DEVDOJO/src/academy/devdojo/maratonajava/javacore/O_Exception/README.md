@@ -9,18 +9,18 @@ Exceções são condições anormais que ocorrem durante a execução de um prog
 Tudo que pode ser "lançado" (thrown) em Java herda da classe Throwable.
 Throwable tem duas subclasses principais:
 
-**Error**: Representa problemas sérios que uma aplicação razoável não deveria tentar tratar. Geralmente são condições anormais que ocorrem na Java Virtual Machine (JVM) ou no ambiente de execução.
+- **Error**: Representa problemas sérios que uma aplicação razoável não deveria tentar tratar. Geralmente são condições anormais que ocorrem na Java Virtual Machine (JVM) ou no ambiente de execução.
 
-**Exception:** Representa condições que uma aplicação pode querer tratar. Estas são subdivididas em exceções checadas (checked exceptions) e não checadas (unchecked exceptions/runtime exceptions)
+- **Exception:** Representa condições que uma aplicação pode querer tratar. Estas são subdivididas em exceções checadas (checked exceptions) e não checadas (unchecked exceptions/runtime exceptions)
 
 #### Error (Erro):
 São situações das quais, na maioria das vezes, o programa não consegue se recuperar.
 Quando um Error ocorre, a JVM geralmente para a execução do programa.
 
 #### Exemplos de Error:
-_OutOfMemoryError_: Ocorre quando a JVM não consegue alocar mais memória porque toda a memória disponível foi esgotada.
+- _OutOfMemoryError_: Ocorre quando a JVM não consegue alocar mais memória porque toda a memória disponível foi esgotada.
 
-_StackOverflowError_: Ocorre quando a pilha de chamadas de métodos (call stack) excede seu limite de tamanho. Isso é comum em recursões infinitas ou muito profundas.
+- _StackOverflowError_: Ocorre quando a pilha de chamadas de métodos (call stack) excede seu limite de tamanho. Isso é comum em recursões infinitas ou muito profundas.
 
 A solução para um _Error_ geralmente envolve corrigir o problema fundamental no código ou no ambiente (ex: aumentar a memória da JVM, corrigir uma recursão infinita) e reiniciar a aplicação. Não se espera que o programa trate esses erros em tempo de execução.
 
@@ -31,6 +31,7 @@ Uma vez que esse erro ocorre, não há muito o que o programa possa fazer para s
 #### Conclusão sobre Error:
 Error é que são problemas graves, geralmente ligados à JVM ou ao ambiente, e que a aplicação não deve tentar capturá-los ou se recuperar deles. A ação correta é identificar a causa raiz, corrigir o código ou o ambiente e reiniciar.
 
+---
 ![img_2.png](img_2.png)![img_2.png](img_2.png)
 
 Esse diagrama mostra a hierarquia de tratamento de erros e exceções em Java. Ele representa como as principais classes
@@ -56,8 +57,8 @@ Resumo visual:
 
 Azul: Classes base e exceções "checked" (precisam ser tratadas).
 Vermelho: Erros e exceções "unchecked" (não precisam ser tratadas obrigatoriamente).
-
-#### O que é StackOverflowError em Java?
+---
+## O que é StackOverflowError em Java?
 
 O StackOverflowError é um erro que ocorre quando a pilha de execução (stack) 
 de um programa excede o limite de memória reservado para ela. Em Java, isso 
@@ -96,8 +97,7 @@ evitando o estouro da pilha.
 O StackOverflowError é um erro comum em programas que usam recursão sem controle. 
 Ele indica que a pilha de chamadas do programa ficou cheia, geralmente por falta 
 de uma condição de parada em métodos recursivos.
-
-
+---
 ## Tratamento de Exceções: Ordem dos Blocos `catch` em Java
 
 ### Por que a ordem dos blocos `catch` importa?
@@ -105,8 +105,6 @@ de uma condição de parada em métodos recursivos.
 Em Java, quando usamos múltiplos blocos `catch` para tratar exceções, **a ordem em que eles aparecem é fundamental**. Sempre devemos colocar os blocos que tratam exceções **mais específicas antes dos mais genéricos**.
 
 Se você colocar um bloco `catch` genérico antes de um específico, o compilador vai acusar erro, pois o bloco específico nunca será alcançado.
-
----
 
 ### Exemplo Correto:
 
@@ -151,15 +149,13 @@ Sempre coloque os blocos catch das exceções mais específicas antes dos mais g
 Se inverter a ordem, o código não compila.
 Use múltiplos blocos catch quando quiser tratar exceções de formas diferentes.
 Se o tratamento for igual, pode usar apenas o bloco mais genérico.
-
+---
 ## Exceções Multi-Catch em Linha 
 
 ### O que é Multi-Catch?
 
 A partir do Java 7, foi introduzida uma nova sintaxe para tratar múltiplas exceções diferentes no mesmo bloco `catch`, facilitando a legibilidade e manutenção do código.  
 Essa sintaxe é chamada de **multi-catch** e permite capturar exceções que **não estão na mesma hierarquia de herança** em um único bloco, separando os tipos por `|` (pipe).
-
----
 
 ### Exemplo de uso
 
@@ -195,3 +191,92 @@ O multi-catch serve para simplificar o código quando o tratamento das exceçõe
 
 Código mais limpo e legível.
 Evita duplicação de código quando o tratamento é o mesmo para diferentes exceções.
+
+---
+## Try with Resources em Java
+
+### O que é Try with Resources?
+
+O **try with resources** é uma estrutura introduzida no Java 7 para facilitar o gerenciamento automático de recursos, como arquivos, conexões de banco de dados, sockets, etc.  
+Recursos são objetos que precisam ser fechados após o uso para liberar memória e evitar vazamentos.  
+Com o try with resources, o Java garante que esses recursos serão fechados automaticamente ao final do bloco `try`, mesmo que ocorra uma exceção.
+
+
+
+### Como funciona?
+
+Para usar o try with resources, basta declarar os recursos entre parênteses logo após o `try`.  
+Esses recursos **devem implementar a interface `AutoCloseable`** (ou `Closeable`, que herda de `AutoCloseable`).  
+Ao final do bloco, o método `close()` de cada recurso é chamado automaticamente pelo Java.
+
+#### Exemplo:
+
+```java
+try (BufferedReader br = new BufferedReader(new FileReader("arquivo.txt"))) {
+    String linha;
+    while ((linha = br.readLine()) != null) {
+        System.out.println(linha);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+// O BufferedReader será fechado automaticamente aqui, mesmo se ocorrer uma exceção.
+```
+### Métodos para ler arquivos:
+1. Usando try with resources (moderno e recomendado):
+
+```java
+private static void readFile() {
+    try (Reader1 reader1 = new Reader1();
+         Reader2 reader2 = new Reader2()) {
+        // Use os recursos aqui
+    } catch (IOException e) {
+        // Trate exceções aqui
+    }
+}
+```
+
+`Reader1` e `Reader2` são exemplos de recursos que implementam AutoCloseable.
+O método close() de ambos será chamado automaticamente ao final do bloco.
+
+2. Usando try-catch-finally (antigo):
+
+````java
+private static void readFile2() {
+    Reader reader = null;
+    try {
+        reader = new BufferedReader(new FileReader("text.txt"));
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    } finally {
+        try {
+            if (reader != null) {
+                reader.close();
+            }
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+}
+````
+Antes do Java 7, era necessário fechar manualmente os recursos no bloco finally.
+Isso deixava o código mais verboso e sujeito a erros, como esquecer de fechar o recurso ou não tratar exceções corretamente.
+
+### Vantagens do Try with Resources:
+
+- Menos código e mais legibilidade: Não precisa de bloco `finally` para fechar recursos.
+- Mais seguro: Garante o fechamento dos recursos, mesmo se ocorrer uma exceção.
+- Evita vazamento de recursos: Reduz o risco de esquecer de fechar arquivos, conexões, etc.
+- Permite múltiplos recursos: Você pode declarar vários recursos no mesmo bloco try, separados por ponto e vírgula.
+
+### Detalhes importantes:
+
+- A ordem de fechamento dos recursos é inversa à ordem de declaração.
+Ou seja, o último recurso declarado é fechado primeiro.
+- Se o método close() lançar uma exceção, ela será suprimida, mas pode ser acessada via Throwable.getSuppressed() na exceção principal.
+- Você pode usar qualquer classe que implemente AutoCloseable (incluindo recursos próprios).
+
+### Resumo:
+
+O `try with resources` é a forma mais moderna, segura e recomendada de trabalhar com recursos em Java.
+Sempre que for manipular arquivos, conexões ou qualquer objeto que precise ser fechado, prefira essa abordagem.
