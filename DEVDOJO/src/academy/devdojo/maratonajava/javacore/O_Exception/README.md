@@ -204,8 +204,6 @@ O **try with resources** é uma estrutura introduzida no Java 7 para facilitar o
 Recursos são objetos que precisam ser fechados após o uso para liberar memória e evitar vazamentos.  
 Com o try with resources, o Java garante que esses recursos serão fechados automaticamente ao final do bloco `try`, mesmo que ocorra uma exceção.
 
-
-
 ### Como funciona?
 
 Para usar o try with resources, basta declarar os recursos entre parênteses logo após o `try`.  
@@ -283,3 +281,209 @@ Ou seja, o último recurso declarado é fechado primeiro.
 
 O `try with resources` é a forma mais moderna, segura e recomendada de trabalhar com recursos em Java.
 Sempre que for manipular arquivos, conexões ou qualquer objeto que precise ser fechado, prefira essa abordagem.
+
+---
+
+## Exceções Customizadas em Java
+
+### O que são exceções customizadas?
+
+Exceções customizadas são classes de exceção criadas pelo próprio desenvolvedor para representar situações específicas da sua aplicação, tornando o tratamento de erros mais claro e organizado.
+
+### Por que criar exceções customizadas?
+
+- Para indicar erros de negócio ou regras específicas do seu sistema.
+- Para tornar o código mais legível e fácil de manter.
+- Para diferenciar falhas técnicas (como `NullPointerException`) de falhas de negócio (como `SaldoInsuficienteException`).
+
+### Como criar uma exceção customizada?
+
+Basta criar uma nova classe que **herda de `Exception`** (para exceções checadas) ou de **`RuntimeException`** (para exceções não checadas).
+
+#### Exemplo de exceção customizada:
+
+```java
+public class LoginInvalidException extends Exception {
+    public LoginInvalidException(String message) {
+        super(message);
+    }
+}
+```
+
+### Como lançar e capturar:
+
+```java
+public void login(String username, String password) throws LoginInvalidException {
+    if (!"admin".equals(username) || !"123".equals(password)) {
+        throw new LoginInvalidException("Usuário ou senha inválidos!");
+    }
+}
+''
+try {
+    login("user", "wrongpass");
+} catch (LoginInvalidException e) {
+    System.out.println(e.getMessage());
+}
+```
+
+### Dicas:
+
+- Use exceções customizadas para deixar claro o motivo do erro.
+- Sempre forneça uma mensagem descritiva ao lançar a exceção.
+- Prefira herdar de Exception para exceções de negócio (checadas) e de RuntimeException para erros inesperados (não checadas).
+
+---
+
+## Exceções e Regras de Sobrescrita de Métodos em Java
+
+### Contexto:
+
+Quando você trabalha com herança em Java, pode sobrescrever métodos da superclasse em uma subclasse. Se esses métodos lançam exceções (usam `throws`), existem regras específicas sobre o que pode ou não ser declarado na subclasse. Entender essas regras é fundamental para evitar erros de compilação e para escrever código robusto e seguro.
+
+### Regras detalhadas:
+
+#### 1. **Você pode remover exceções checadas na sobrescrita**
+
+Se o método da superclasse declara exceções checadas (por exemplo, `throws IOException`), o método sobrescrito na subclasse **pode declarar menos exceções** ou até **nenhuma exceção**.  
+Isso é útil quando a implementação da subclasse não precisa mais lançar aquela exceção.
+
+**Exemplo:**
+```java
+class Pessoa {
+    public void salvar() throws IOException, LoginInvalidException {
+        // implementação
+    }
+}
+
+class Funcionario extends Pessoa {
+    @Override
+    public void salvar() {
+        // implementação que não lança exceção
+    }
+}
+```
+
+#### 2. Você pode lançar exceções checadas mais específicas
+
+O método sobrescrito pode lançar exceções que são subclasses das exceções declaradas na superclasse.
+Isso permite especializar o tratamento de erros na subclasse.
+
+Exemplo:
+
+```java
+class Pessoa {
+    public void salvar() throws Exception {
+        // implementação
+    }
+}
+
+class Funcionario extends Pessoa {
+    @Override
+    public void salvar() throws FileNotFoundException {
+        // implementação
+    }
+}
+```
+
+Aqui, FileNotFoundException é filha de Exception, então é permitido.
+#### 3. Você NÃO pode lançar exceções checadas mais genéricas ou novas
+
+O método sobrescrito não pode lançar exceções checadas que não estejam presentes (nem como superclasse, nem como filha) na declaração do método da superclasse.
+Ou seja, não pode adicionar exceções novas ou mais genéricas.
+
+#### Exemplo:
+
+```java
+class Pessoa {
+    public void salvar() throws FileNotFoundException {
+        // implementação
+    }
+}
+
+class Funcionario extends Pessoa {
+    // ERRO: Exception é mais genérica que FileNotFoundException
+    @Override
+    public void salvar() throws Exception {
+        // implementação
+    }
+}
+```
+
+#### 4. Exceções não checadas (unchecked) podem ser adicionadas livremente
+
+Você pode adicionar exceções do tipo RuntimeException (e suas filhas) na sobrescrita, mesmo que não estejam na superclasse.
+Isso porque exceções não checadas não precisam ser declaradas nem tratadas.
+
+Exemplo:
+
+```java
+class Pessoa {
+    public void salvar() throws IOException {
+        // implementação
+    }
+}
+
+class Funcionario extends Pessoa {
+    @Override
+    public void salvar() throws IOException, IllegalArgumentException {
+        // implementação
+    }
+}
+```
+Aqui, IllegalArgumentException é unchecked, então é permitido.
+
+### Resumo das regras de sobrescrita de exceções
+
+- **Se o método da superclasse lança uma exceção checada (ex: `IOException`):**
+    - O método sobrescrito pode lançar a mesma exceção, uma exceção mais específica (subclasse) ou nenhuma exceção.
+    - **Não pode** lançar exceções mais genéricas (ex: `Exception`) ou novas exceções checadas que não estavam na superclasse.
+
+- **Se o método da superclasse lança uma exceção genérica (ex: `Exception`):**
+    - O método sobrescrito pode lançar a mesma exceção, uma exceção mais específica (subclasse) ou nenhuma exceção.
+    - **Não pode** lançar exceções mais genéricas (ex: `Throwable`) ou novas exceções checadas que não estavam na superclasse.
+
+- **Se o método da superclasse não lança exceção checada:**
+    - O método sobrescrito **não pode** lançar exceções checadas novas.
+    - Pode lançar exceções não checadas (`RuntimeException` e suas filhas) à vontade.
+
+#### Exemplos práticos:
+
+```java
+// Superclasse lança IOException
+public void salvar() throws IOException {}
+
+// Subclasse pode:
+@Override
+public void salvar() throws IOException {} // OK
+@Override
+public void salvar() throws FileNotFoundException {} // OK (subclasse de IOException)
+@Override
+public void salvar() {} // OK (nenhuma exceção)
+
+// Subclasse NÃO pode:
+@Override
+public void salvar() throws Exception {} // ERRO (mais genérica)
+@Override
+public void salvar() throws SQLException {} // ERRO (nova exceção checada)
+ ```
+
+```java
+// Superclasse não lança exceção checada
+public void salvar() {}
+
+// Subclasse pode:
+@Override
+public void salvar() throws RuntimeException {} // OK (unchecked)
+
+// Subclasse NÃO pode:
+@Override
+public void salvar() throws IOException {} // ERRO (checked)
+```
+
+Essas regras garantem que o código que usa referências da superclasse não seja surpreendido por exceções inesperadas.
+Se a subclasse pudesse lançar exceções novas ou mais genéricas, o código cliente teria que tratar exceções que não estavam previstas na assinatura original.
+Dicas práticas
+
+Se a subclasse não precisa lançar exceções, pode omitir o throws.
+Sempre que possível, especialize (torne mais específica) a exceção na subclasse.
+Nunca adicione exceções checadas novas na sobrescrita.
