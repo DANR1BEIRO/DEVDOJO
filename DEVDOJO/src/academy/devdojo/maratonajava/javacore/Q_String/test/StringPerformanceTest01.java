@@ -8,12 +8,12 @@ public class StringPerformanceTest01 {
         System.out.println("Time normal string: " + (end - start) + "ms");
 
         start = System.currentTimeMillis();
-        concatStringBuilder(1_000_000);
+        concatStringBuilder(10_000_000);
         end = System.currentTimeMillis();
         System.out.println("Time string builder: " + (end - start) + "ms");
 
         start = System.currentTimeMillis();
-        concatStringBuffer(1_000_000);
+        concatStringBuffer(10_000_000);
         end = System.currentTimeMillis();
         System.out.println("Time string buffer: " + (end - start) + "ms");
 
