@@ -152,3 +152,31 @@ Time string buffer: 40ms_
 - **String**: Para textos pequenos ou quando não há muitas concatenações.
 - **StringBuilder**: Para manipulação intensiva de textos em aplicações single-thread.
 - **StringBuffer**: Para manipulação intensiva de textos em aplicações multi-thread.
+
+---
+
+## StringBuilder
+
+Veremos como a classe StringBuilder é usada para manipular textos de forma eficiente em Java, 
+especialmente quando precisamos fazer muitas concatenações.
+
+### # Principais pontos:
+
+- **Strings são imutáveis:**
+Toda vez que você concatena uma String, um novo objeto é criado na memória. Isso pode ser ineficiente em 
+- operações repetidas.
+
+- **StringBuilder é mutável:**
+Permite modificar o texto sem criar novos objetos a cada operação.
+Ideal para situações em que você precisa construir uma String em várias etapas (ex: laços, concatenações 
+- múltiplas).
+
+- **Capacidade inicial:**
+Você pode criar um StringBuilder com uma capacidade inicial (quantidade de caracteres reservados na memória).
+Se ultrapassar esse limite, o StringBuilder dobra sua capacidade automaticamente.
+
+- **Método** append:
+Usado para adicionar texto ao final do StringBuilder, sem criar novos objetos.
+
+- **Conversão para String:**
+O método toString() retorna o valor atual do StringBuilder como uma String comum.
