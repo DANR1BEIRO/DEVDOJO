@@ -154,3 +154,116 @@ O DateFormat adapta o formato de acordo com o local (locale) do sistema, facilit
 - java.text.DateFormat é usado para formatar e exibir datas em diferentes estilos.
 - Permite converter datas para strings legíveis de acordo com o padrão desejado.
 - Para novos projetos, considere usar as classes do pacote java.time.format (Java 8+), como DateTimeFormatter.
+
+---
+
+# Java Dates: Locale e Internacionalização
+
+## Introdução
+
+Esta aula apresenta o conceito de **Locale** em Java, fundamental para internacionalização (i18n) de aplicações.  
+O `Locale` representa uma região geográfica, idioma e, opcionalmente, variantes culturais.  
+Com ele, é possível exibir datas, números, moedas e textos de acordo com as convenções de diferentes países e idiomas.
+
+## Como funciona o Locale?
+
+O `Locale` é uma classe que encapsula informações sobre idioma e país.  
+É usado por várias APIs do Java para adaptar a apresentação de dados (datas, números, etc.) ao padrão local.  
+Um `Locale` é criado informando o código do idioma (ex: `"pt"` para português) e o código do país (ex: `"BR"` para Brasil).
+
+## Exemplo prático
+
+```java
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
+public class LocaleTest01 {
+    public static void main(String[] args) {
+        Calendar calendar = Calendar.getInstance();
+
+        Locale localeBrazil = new Locale("pt", "BR");
+        Locale localeHindi = new Locale("hi", "IN");
+        Locale localeJapan = new Locale("ja", "JP");
+        Locale localeChina = new Locale("zh", "CN");
+        Locale localeKorean = new Locale("ko", "KP");
+        Locale localeArgentina = new Locale("es", "AR");
+
+        DateFormat brazil = DateFormat.getDateInstance(DateFormat.FULL, localeBrazil);
+        DateFormat hindi = DateFormat.getDateInstance(DateFormat.FULL, localeHindi);
+        DateFormat japan = DateFormat.getDateInstance(DateFormat.FULL, localeJapan);
+        DateFormat china = DateFormat.getDateInstance(DateFormat.FULL, localeChina);
+        DateFormat korean = DateFormat.getDateInstance(DateFormat.FULL, localeKorean);
+        DateFormat argentina = DateFormat.getDateInstance(DateFormat.FULL, localeArgentina);
+
+        System.out.println("Brazil: " + brazil.format(calendar.getTime()));
+        System.out.println("Hindi: " + hindi.format(calendar.getTime()));
+        System.out.println("Japan: " + japan.format(calendar.getTime()));
+        System.out.println("China: " + china.format(calendar.getTime()));
+        System.out.println("Korean: " + korean.format(calendar.getTime()));
+        System.out.println("Argentina: " + argentina.format(calendar.getTime()));
+
+        System.out.println(localeJapan.getDisplayCountry(localeBrazil));
+        System.out.println(localeJapan.getDisplayCountry(localeArgentina));
+        System.out.println(localeJapan.getDisplayCountry(localeKorean));
+    }
+}
+```
+## Pontos importantes:
+
+### Criação de Locale:
+- Use `new Locale("idioma", "PAÍS")` para criar um objeto representando uma localidade específica
+- Exemplo: `"pt", "BR"` para português do Brasil
+
+### Formatação de datas com Locale:
+- `DateFormat.getDateInstance(DateFormat.FULL, locale)` retorna um formatador de datas
+- O formatador segue o padrão do país/idioma informado
+
+### Exibição de datas em diferentes idiomas:
+- A mesma data formatada com diferentes Locales terá saídas diferentes
+- Cada saída segue as convenções do país/idioma especificado
+
+### Exibição do nome do país em diferentes idiomas:
+- `getDisplayCountry(locale)` retorna o nome do país no idioma especificado
+- Exemplo:  
+  `localeJapan.getDisplayCountry(localeBrazil)` → "Japão"  
+  `localeJapan.getDisplayCountry(localeArgentina)` → "Japón"  
+  `localeJapan.getDisplayCountry(localeKorean)` → "일본"
+
+## Saída esperada (exemplo): 
+
+```
+Brazil: terça-feira, 8 de julho de 2025
+Hindi: मंगलवार, 8 जुलाई, 2025
+Japan: 2025年7月8日火曜日
+China: 2025年7月8日星期二
+Korean: 2025년 7월 8일 화요일
+Argentina: martes 8 de julio de 2025
+Japão
+Japón
+일본
+```
+
+*Observação: A saída pode variar conforme a data de execução e as configurações do sistema.*
+
+## Resumo:
+
+- **Propósito do Locale**:  
+  Adaptar a apresentação de dados para diferentes países e idiomas
+
+- **Importância**:  
+  Essencial para internacionalização (i18n) de aplicações Java
+
+- **Classes relacionadas**:  
+  Pode ser usado com:
+    - `DateFormat` para formatação de datas
+    - `NumberFormat` para números e moedas
+    - Outras classes de internacionalização
+
+- **Benefício principal**:  
+  Garante que dados sejam exibidos conforme o padrão cultural do usuário
+
+
+
+>Observação final: O exemplo demonstra como pequenas variações no Locale podem produzir grandes diferenças na 
+> apresentação dos dados, tornando o aplicativo mais acessível e adequado a diferentes culturas.
