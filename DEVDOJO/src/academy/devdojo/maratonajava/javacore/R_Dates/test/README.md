@@ -93,3 +93,64 @@ public class CalendarTest01 {
 - java.util.Calendar é uma classe abstrata para manipulação avançada de datas e horários.
 - Permite acessar e modificar partes específicas da data/hora.
 - Para novos projetos, prefira as classes do pacote java.time (Java 8+), como LocalDate, LocalDateTime, etc.
+
+---
+
+# Java Dates: Classe `java.text.DateFormat`
+
+## Introdução
+
+A classe `java.text.DateFormat` é uma ferramenta poderosa para formatar e exibir datas e horários em diferentes estilos e padrões em Java.  
+O `DateFormat` facilita a conversão de objetos `Date` (ou `Calendar`) para strings legíveis, de acordo com o formato desejado.
+
+## Como funciona a classe DateFormat?
+
+- `DateFormat` é uma classe abstrata usada para formatar e analisar datas.
+- Ela possui métodos estáticos para obter instâncias pré-configuradas com diferentes estilos de formatação.
+- Os estilos principais são: `SHORT`, `MEDIUM`, `LONG` e `FULL`, além dos padrões padrão do sistema.
+
+## Exemplo prático:
+
+```java
+import java.text.DateFormat;
+import java.util.Calendar;
+
+public class DateFormatTest01 {
+    public static void main(String[] args) {
+        Calendar calendar = Calendar.getInstance();
+        DateFormat[] dfa = new DateFormat[7];
+
+        dfa[0] = DateFormat.getInstance();
+        dfa[1] = DateFormat.getDateInstance();
+        dfa[2] = DateFormat.getDateTimeInstance();
+        dfa[3] = DateFormat.getDateInstance(DateFormat.SHORT);
+        dfa[4] = DateFormat.getDateInstance(DateFormat.MEDIUM);
+        dfa[5] = DateFormat.getDateInstance(DateFormat.LONG);
+        dfa[6] = DateFormat.getDateInstance(DateFormat.FULL);
+
+        for (DateFormat dateFormat : dfa) {
+            System.out.println(dateFormat.format(calendar.getTime()));
+        }
+    }
+}
+```
+
+Neste exemplo, o código cria um array de diferentes formatos de data e imprime a data atual em cada um deles, mostrando como o mesmo valor pode ser exibido de várias formas.
+
+### Pontos importantes:
+
+- **Instâncias de DateFormat:**
+    - getInstance(): Retorna o formato padrão do sistema.
+    - getDateInstance(): Retorna o formato padrão de data.
+    - getDateTimeInstance(): Retorna o formato padrão de data e hora.
+    - getDateInstance(style): Retorna o formato de data no estilo especificado (SHORT, MEDIUM, LONG, FULL).
+- **Formatação**:
+O método format(Date) converte um objeto Date (ou Calendar.getTime()) em uma string formatada.
+- **Internacionalização**:
+O DateFormat adapta o formato de acordo com o local (locale) do sistema, facilitando a exibição de datas em diferentes países.
+
+### **Resumo**:
+
+- java.text.DateFormat é usado para formatar e exibir datas em diferentes estilos.
+- Permite converter datas para strings legíveis de acordo com o padrão desejado.
+- Para novos projetos, considere usar as classes do pacote java.time.format (Java 8+), como DateTimeFormatter.
