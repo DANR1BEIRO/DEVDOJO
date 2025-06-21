@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class NumberFormatTest01 {
+public class NumberFormatTest02 {
     public static void main(String[] args) {
         Locale localeBrazil = new Locale("pt", "BR");
         Locale localeJapan = Locale.JAPAN;
@@ -12,21 +12,22 @@ public class NumberFormatTest01 {
 
         NumberFormat[] nfa = new NumberFormat[4];
 
-        nfa[0] = NumberFormat.getInstance();
-        nfa[1] = NumberFormat.getInstance(localeJapan);
-        nfa[2] = NumberFormat.getInstance(localeBrazil);
-        nfa[3] = NumberFormat.getInstance(localeItaly);
-        double value = 1000.50;
+        nfa[0] = NumberFormat.getCurrencyInstance();
+        nfa[1] = NumberFormat.getCurrencyInstance(localeJapan);
+        nfa[2] = NumberFormat.getCurrencyInstance(localeBrazil);
+        nfa[3] = NumberFormat.getCurrencyInstance(localeItaly);
+        double value = 1000.2130;
 
         for (NumberFormat numberFormat : nfa) {
             System.out.println(numberFormat.getMaximumFractionDigits());
-            System.out.println(numberFormat.format(value));
+            numberFormat.setMaximumFractionDigits(2);
+            System.out.println(numberFormat.format(value ));
         }
-        String valueString = "1000.2130";
+        String valueString = "1.000,21 €";
         try {
-            System.out.println(nfa[0].parse(valueString));
+            System.out.println(nfa[3].parse(valueString));
         } catch (ParseException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
