@@ -22,6 +22,7 @@ public class FileTest02 {
         boolean isPastaRenomeada = novaPasta.renameTo(pastaRenomeada);
         System.out.println("Pasta renomeada: " + isPastaRenomeada);
         pastaRenomeada.renameTo(new File("pasta3"));
+
     }
 }
 
