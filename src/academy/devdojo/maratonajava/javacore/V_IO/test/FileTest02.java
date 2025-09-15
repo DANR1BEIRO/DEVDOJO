@@ -5,20 +5,40 @@ import java.io.IOException;
 
 public class FileTest02 {
     public static void main(String[] args) throws IOException {
-        File folder01 = new File("New folder");
-        boolean isFolderCreated = folder01.mkdir();
-        System.out.println("New folder is created: " + isFolderCreated);
 
-        File file01 = new File(folder01, "file.txt");
-        boolean isFileCreated = file01.createNewFile();
-        System.out.println("New file is created: " + isFileCreated);
+        File novaPasta = new File("pasta");
+        boolean isPastaCriada = novaPasta.mkdir();
+        System.out.println("Pasta criada: " + isPastaCriada);
 
-        File fileRenamed = new File(folder01, "File Renamed");
-        boolean isFileRenamed = file01.renameTo(fileRenamed);
-        System.out.println("File renamed: " + isFileRenamed);
+        File novoArquivo = new File(novaPasta, "V1_arquivo.txt");
+        boolean isArquivoCriado = novoArquivo.createNewFile();
+        System.out.println("Arquivo criado: " + isArquivoCriado);
 
-        File folderRenamed = new File("Folder renamed");
-        boolean isFolderRenamed = folder01.renameTo(folderRenamed);
-        System.out.println("Folder renamed: " + isFolderRenamed);
+        File arquivoRenomeado = new File(novaPasta, "V2_arquivo.txt");
+        boolean isArquivoRenomeado = arquivoRenomeado.createNewFile();
+        System.out.println("Arquivo renomeado: " + isArquivoRenomeado);
+
+        File pastaRenomeada = new File("pasta2");
+        boolean isPastaRenomeada = novaPasta.renameTo(pastaRenomeada);
+        System.out.println("Pasta renomeada: " + isPastaRenomeada);
+        pastaRenomeada.renameTo(new File("pasta3"));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
