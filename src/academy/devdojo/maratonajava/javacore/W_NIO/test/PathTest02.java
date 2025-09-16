@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.W_nio.test;
+package academy.devdojo.maratonajava.javacore.W_NIO.test;
 
 import java.io.IOException;
 import java.nio.file.Files;
