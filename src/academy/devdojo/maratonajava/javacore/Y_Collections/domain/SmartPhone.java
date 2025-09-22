@@ -9,6 +9,28 @@ public class SmartPhone {
         this.marca = marca;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (this.getClass() != obj.getClass()) return false;
+        SmartPhone smartPhone = (SmartPhone) obj;
+        return serial != null && serial.equals(smartPhone.serial);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.serial == null ? 0 : this.serial.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "serial='" + serial + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
     public String getSerial() {
         return serial;
     }
