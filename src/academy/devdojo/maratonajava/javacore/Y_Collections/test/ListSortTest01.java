@@ -28,7 +28,7 @@ public class ListSortTest01 {
         Collections.sort(valores);
         System.out.println(valores);
 
-        new Manga(null, null, null);
+        new Manga(null, null, 0);
     }
 
 }

@@ -2,15 +2,39 @@ package academy.devdojo.maratonajava.javacore.Y_Collections.domain;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable<Manga> {
     private Long id;
     private String name;
-    private String valor;
+    private double valor;
 
-    public Manga(Long id, String name, String valor) {
+    public Manga(Long id, String name, double valor) {
         this.id = Objects.requireNonNull(id, "ID não pode ser nulo");
         this.name = Objects.requireNonNull(name, "Nome não pode ser nulo");
         this.valor = Objects.requireNonNull(valor, "Valor não pode ser nulo");
+    }
+
+    /**
+     * Regras do compareTo:
+     * <p>
+     * Como é implementado na própria classe, o metodo
+     * compara o Objeto atual (this) com o objeto passado como argumento.
+     *
+     * @param manga
+     * @return -1 se o this for menor do que manga.
+     * @return 0 se os objetos comparados forem iguais.
+     * @return 1 se o this for maior do que manga.
+     * As classes Wrappers e String já implementam o metodo compareTo.
+     * Se o campo a ser comparado for de um tipo primitivo, deve-se chamar
+     * o metodo compare da classe wrapper desse campo primitivo.
+     */
+    @Override
+    public int compareTo(Manga manga) {
+        // compara por id
+        return this.id.compareTo(manga.getId());
+
+        // metodo compare da classe wrapper Double para comparar
+        // o campo de tipo primitivo double dos objetos
+        // return Double.compare(valor, manga.getValor());
     }
 
     @Override
@@ -21,6 +45,7 @@ public class Manga {
                 ", valor='" + valor + '\'' +
                 '}';
     }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Manga manga)) return false;
@@ -48,11 +73,11 @@ public class Manga {
         this.name = name;
     }
 
-    public String getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(String valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }
