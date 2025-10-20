@@ -30,11 +30,13 @@ public class Manga implements Comparable<Manga> {
     @Override
     public int compareTo(Manga manga) {
         // compara por id
-        return this.id.compareTo(manga.getId());
+        //return this.id.compareTo(manga.getId());
 
         // metodo compare da classe wrapper Double para comparar
         // o campo de tipo primitivo double dos objetos
         // return Double.compare(valor, manga.getValor());
+
+        return this.name.compareTo(manga.getName());
     }
 
     @Override
