@@ -55,6 +55,17 @@ public class Manga implements Comparable<Manga> {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Manga manga)) return false;
+        return Objects.equals(id, manga.id) && Objects.equals(name, manga.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
+
     public int getQuantidade() {
         return quantidade;
     }
