@@ -18,5 +18,8 @@ public class ListIteratorTest01 {
         }
         nomesIterador.add("Bulma");
         System.out.println(nomes);
+
+        nomes.removeIf(nome -> nome.equals("Goku"));
+        System.out.println(nomes);
     }
 }
