@@ -12,9 +12,12 @@ public class Jukebox {
 
     public void go() {
         List<Song> listOfSongs = MockSongs.getSongs();
-        System.out.println(listOfSongs);
+        System.out.println("Sem ordenação: " + listOfSongs);
 
         Collections.sort(listOfSongs);
-        System.out.println(listOfSongs);
+        System.out.println("Lista ordenada pelo título: " + listOfSongs);
+
+        listOfSongs.sort(new ArtistCompare());
+        System.out.println("Lista ordenada pelo artista: " + listOfSongs);
     }
 }
