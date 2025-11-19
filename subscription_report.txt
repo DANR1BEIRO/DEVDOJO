@@ -1,0 +1,3 @@
+Subscription report:
+Service: Netflix | Plan: PREMIUM | Price: $25.90 | Active: true
+Service: Prime vídeo | Plan: BASIC | Price: $89.00 | Active: true
