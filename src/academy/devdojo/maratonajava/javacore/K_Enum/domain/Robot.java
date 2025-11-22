@@ -22,6 +22,11 @@ public class Robot {
                 break;
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
 
 

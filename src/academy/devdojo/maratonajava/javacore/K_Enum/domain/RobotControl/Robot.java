@@ -22,11 +22,13 @@ public class Robot {
     @Override
     public String toString() {
         return String.format("""
-                        Type: %s
+                        \n----------------------
                         Name: %s
+                        Type: %s                 
                         Serial Number: %s
-                        Energy source: %s""",
-                type, name, serialNumber, energy);
+                        Energy source: %s
+                        ----------------------\n""",
+                name, type, serialNumber, energy);
     }
 
     public String getName() {
