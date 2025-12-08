@@ -13,6 +13,10 @@ public class OuterClassesTest01 {
     }
 
     static void main() {
+        /**
+         * Para criar um objeto da classe interna, é necessário que seja
+         * criado um objeto da classe exterma, por causa de sua forte ligacão.
+         */
         OuterClassesTest01 outerClassesTest01 = new OuterClassesTest01();
         Inner inner = outerClassesTest01.new Inner();
         inner.printAtributoDaOuterClass();
