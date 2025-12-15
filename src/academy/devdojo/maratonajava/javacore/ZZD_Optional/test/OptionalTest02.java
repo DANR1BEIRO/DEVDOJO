@@ -4,6 +4,7 @@ import academy.devdojo.maratonajava.javacore.ZZD_Optional.domain.Manga;
 import academy.devdojo.maratonajava.javacore.ZZD_Optional.repository.MangaRepository;
 
 import java.util.Optional;
+import java.util.function.Supplier;
 
 public class OptionalTest02 {
     static void main() {
@@ -18,9 +19,9 @@ public class OptionalTest02 {
         System.out.println(manngaById);
 
         // caso não existe, cria um novo
-        Manga nnewManga = MangaRepository.findByTitle("Dragon ball")
-                .orElse(new Manga(3, "Dragon ball", 300));
-        System.out.println(nnewManga);
+        Manga newManga = MangaRepository.findByTitle("Berserk")
+                .orElseGet(() -> new Manga(3, "Dragon Ball", 300));
+        System.out.println(newManga);
 
     }
 }
