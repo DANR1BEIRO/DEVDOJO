@@ -7,24 +7,33 @@ public class StreamTest04 {
     static void main() {
         List<Classroom> school = List.of(
                 new Classroom(List.of(
-                        new Student("Goku", 7),
-                        new Student("Gohan", 5),
-                        new Student("Goten", 3))),
+                        new Student("Goku", 7, List.of("Artes Marciais", "Física")),
+                        new Student("Gohan", 5, List.of("Biologia", "Matemática")),
+                        new Student("Goten", 3, List.of("Artes Marciais")))),
                 new Classroom(List.of(
-                        new Student("Tetsuo", 2),
-                        new Student("Kaneda", 1),
-                        new Student("Kei", 8))),
+                        new Student("Tetsuo", 2, List.of("Poderes Psíquicos")),
+                        new Student("Kaneda", 1, List.of("Mecânica")),
+                        new Student("Kei", 8, List.of("Liderança", "Física")))),
                 new Classroom(List.of(
-                        new Student("Mikasa", 9.5),
-                        new Student("Levi", 10),
-                        new Student("Hange", 4)))
+                        new Student("Mikasa", 9.5, List.of("Estratégia", "Artes Marciais")),
+                        new Student("Levi", 10, List.of("Estratégia", "Liderança")),
+                        new Student("Hange", 4, List.of("Ciência"))))
         );
+
+        List<String> allSubjects = school.stream()
+                .flatMap(classroom -> classroom.getStudents().stream())
+                .filter(student -> student.getGrade() >= 5)
+                .flatMap(student -> student.getSubjects().stream())
+                .distinct()
+                .sorted()
+                .toList();
+
+        allSubjects.forEach(System.out::println);
 
         // drill down and flatten the structure
         List<Student> allStudents = school.stream()
                 .peek(classroom -> System.out.println("\nOpening the classroom:")) // peek at the container before flattening
                 .flatMap(classroom -> classroom.getStudents().stream())
-                .filter(student -> student.getGrade() >= 5)
                 .peek(student -> System.out.println("Found the student " + student.getName())) // peek at the individual elements after they are extracted
                 .sorted(Comparator.comparing(Student::getName))
                 .toList();
@@ -38,10 +47,12 @@ public class StreamTest04 {
 class Student {
     private String name;
     private double grade;
+    private List<String> subjects;
 
-    public Student(String name, double grade) {
+    public Student(String name, double grade, List<String> subjects) {
         this.name = name;
         this.grade = grade;
+        this.subjects = subjects;
     }
 
     @Override
@@ -58,6 +69,10 @@ class Student {
 
     public double getGrade() {
         return grade;
+    }
+
+    public List<String> getSubjects() {
+        return subjects;
     }
 }
 
