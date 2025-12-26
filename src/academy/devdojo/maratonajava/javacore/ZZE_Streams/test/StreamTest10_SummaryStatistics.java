@@ -52,7 +52,7 @@ Observações importantes:
 - Collectors são usados quando a redução precisa de mais controle ou composição
 */
 
-public class StreamTest10SummaryStatistics {
+public class StreamTest10_SummaryStatistics {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Lone Wolf & Cub", 8.99),
             new LightNovel("Evangelion", 3.99),
