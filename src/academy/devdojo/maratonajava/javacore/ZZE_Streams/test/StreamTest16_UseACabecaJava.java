@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamUseACabecaJava {
+public class StreamTest16_UseACabecaJava {
     static void main() {
         List<String> strings = List.of("I", "am", "a", "list", "of", "Strings");
         System.out.println(strings);
