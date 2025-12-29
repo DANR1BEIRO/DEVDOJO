@@ -4,6 +4,7 @@ package academy.devdojo.maratonajava.javacore.ZZE_Streams.test;
 // expected result: [Americano, Cappuccino, Cortado, Espresso]
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StreamTest17_CoffeeOrder {
@@ -18,5 +19,24 @@ public class StreamTest17_CoffeeOrder {
                 .collect(Collectors.toList());
 
         System.out.println(result);
+
+        /**
+         * You can chain these operations as much as you like. However, remember that
+         * code must be read by humans, not just computers! If a stream pipeline is too long,
+         * it becomes difficult to understand. In those cases, it is better to split the pipeline
+         * and assign sections to variables with meaningful names.
+         */
+
+        // filtering by the last letter and storing in a Set
+        Set<String> coffeesEndingInO = coffees.stream()
+                .filter(c -> c.endsWith("o"))
+                .collect(Collectors.toSet());
+
+        // sorting by natural order
+        List<String> sortedCoffee = coffeesEndingInO.stream()
+                .sorted()
+                .toList();
+
+        System.out.println(sortedCoffee); // [Americano, Cappuccino, Cortado, Espresso]
     }
 }
