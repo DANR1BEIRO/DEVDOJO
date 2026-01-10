@@ -3,7 +3,8 @@ package academy.devdojo.maratonajava.javacore.ZZF_Threads.test;
 import academy.devdojo.maratonajava.javacore.ZZF_Threads.domain.Account;
 
 public class ThreadAccountTest01 implements Runnable {
-    private Account account = new Account();
+    // é necessário anotar como final para que o synchronized saiba de quem é o lock utilizado.
+    private final Account account = new Account();
 
     static void main() {
         ThreadAccountTest01 threadAccountTest01 = new ThreadAccountTest01();
@@ -11,16 +12,31 @@ public class ThreadAccountTest01 implements Runnable {
         Thread t2 = new Thread(threadAccountTest01, "vegeta");
         t1.start();
         t2.start();
-
     }
 
+    // synchronized faz com que uma Thread pegue o lock de onde foi declarado,
+    // isto é, apenas a thread que está com o lock poderá executar o trecho de código
+
     private void withdrawal(int amount) {
-        if (account.getBalance() >= amount) {
-            System.out.println(getThreadName() + " is going to withdrawal money");
-            account.withdrawal(amount);
-            System.out.println(getThreadName() + " finish withdrawing.\nCurrent balance: " + account.getBalance());
-        } else {
-            System.out.println("Not enough balance for " + getThreadName() + " withdrawal money.");
+        System.out.println("Thread fora do synchronized ##### " + getThreadName());
+
+        synchronized (account) {
+            System.out.println("Thread dentro do synchronized **** " + getThreadName());
+
+            if (account.getBalance() >= amount) {
+                System.out.println(getThreadName() + " is going to withdrawal money");
+                account.withdrawal(amount);
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+
+                System.out.println(getThreadName() + " finish withdrawing.\nCurrent balance: " + account.getBalance());
+            } else {
+                System.out.println("Not enough balance for " + getThreadName() + " withdrawal money.");
+            }
         }
     }
 
