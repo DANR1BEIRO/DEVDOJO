@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZF_Threads.test;
+package academy.devdojo.maratonajava.javacore.ZZG_Concurrent.test;
 
 import academy.devdojo.maratonajava.javacore.ZZF_Threads.domain.Members;
 import academy.devdojo.maratonajava.javacore.ZZF_Threads.service.EmailDeliveryService;

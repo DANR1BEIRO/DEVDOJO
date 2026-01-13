@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZG_Concurent.domain;
+package academy.devdojo.maratonajava.javacore.ZZG_Concurrent.domain;
 
 public class Account {
     private int balance = 50;

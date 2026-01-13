@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZG_Concurent.test;
+package academy.devdojo.maratonajava.javacore.ZZG_Concurrent.test;
 
 import java.util.concurrent.locks.ReentrantLock;
 

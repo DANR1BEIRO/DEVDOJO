@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZG_Concurent.service;
+package academy.devdojo.maratonajava.javacore.ZZG_Concurrent.service;
 
-import academy.devdojo.maratonajava.javacore.ZZG_Concurent.domain.Members;
+import academy.devdojo.maratonajava.javacore.ZZG_Concurrent.domain.Members;
 
 public class EmailDeliveryService implements Runnable {
 
