@@ -1,0 +1,1716 @@
+[33mcommit 5d1323291ebc211297b8b4602947d5c234d90016[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Jan 24 13:50:59 2026 -0300
+
+    Aula 241: Concurrency pt 13 - CompletableFuture pt 02 - streams
+
+[33mcommit 4653845b228056016df3cc84196c55cb7da0e144[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Jan 24 13:35:39 2026 -0300
+
+    Aula 240: Concurrency pt 12 - CompletableFuture pt 01 - get and join
+
+[33mcommit eecbf86cef3f3b8377fe0fc0927068a34aa2a9c5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Jan 24 12:35:03 2026 -0300
+
+    .
+
+[33mcommit 1c2c9c3b0bda7b2026b62f40dd84b216609bbba3[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Jan 24 12:17:20 2026 -0300
+
+    Aula 239: Concurrency pt 11 - Executors pt 04 - Future
+
+[33mcommit b8dcf0ec144780d110a6194dd48c4ed7d84c6a56[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Jan 23 11:03:21 2026 -0300
+
+    Aula 238: Concurrency pt 10 - Executors pt 03 - Interface Callable
+
+[33mcommit 44be0237ecf49b8592c4f761faf3d3a5d00e810a[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Jan 23 10:24:17 2026 -0300
+
+    Aula 237: Concurrency pt 09 - Executors pt 02 - ScheduledThreadPool
+
+[33mcommit b44dd3def9b0b849f6eac7cf34d712afef722ada[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Jan 22 12:21:16 2026 -0300
+
+    Aula 236: Concurrency pt 08 - Executors pt 01 - Thread Pool
+
+[33mcommit 248c58adaf567b7e39b3f079fc8e51e3398f5f45[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Jan 22 11:14:06 2026 -0300
+
+    Aula 235: Concurrency pt 07 - LinkedTransferQueue
+
+[33mcommit 6dcca1b5d6efad6f21f99a3cf4de21f9be771a18[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Jan 21 18:11:46 2026 -0300
+
+    test(concorrencia): Implementa padrao producer-consumer utilizando BlockingQueue
+
+[33mcommit 8f0587bdd518746f693d907cd1789716164f1554[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Jan 21 16:18:17 2026 -0300
+
+    Aula 234: Concurrency pt 06 - ArrayBlockingQueue
+
+[33mcommit e447e4f7cedc1a8d9cf92e5dae34d7ae06e038f6[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Jan 19 12:21:39 2026 -0300
+
+    feat: Adiciona prints para facilitar o entendimento do que acontece com o iterator enquanto ele está 'dormindo'por 2seg.
+
+[33mcommit a6f6d3923a80c929ef4da1cbd4aeeae29a935d47[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Jan 19 11:38:59 2026 -0300
+
+    Aula 233: Concurrency pt 05 - CopyOnWriteArrayList
+
+[33mcommit 087dfae70b5a4d45b0dd71b950688c68869ebf69[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Jan 13 10:42:00 2026 -0300
+
+    Aula 232: Concorrência pt 04 - ReentrantReadWriteLock
+
+[33mcommit 182cd4e1fffd4cecdb72c3564e7008209374f517[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Jan 13 09:50:00 2026 -0300
+
+    Aula 231: Concurrency pt 03 - Conditions
+
+[33mcommit 84da3867b7ce4489cc7ad5efd92454f894c10ec2[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Jan 13 09:48:47 2026 -0300
+
+    fix: Add notifyAll() que faltava no corpo do metodo close
+
+[33mcommit 3f6e4e3ee094520d357280a74b7511dfca42c2d2[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Jan 13 09:47:42 2026 -0300
+
+    fix: Add notifyAll() que faltava no corpo do metodo close
+
+[33mcommit 7385e60422278db4a5be98f666a332db646554ce[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Jan 13 08:52:28 2026 -0300
+
+    Aula 230: Concurrency pt 02 - Lock and ReentrantLock
+
+[33mcommit 61f8fae025e11e308ae48fb0ced329f6c4fc5c44[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Jan 12 12:21:39 2026 -0300
+
+    Aula 229: Concurrency pt 01 - AtomicInteger
+
+[33mcommit 972a7d6815002e4403c901a725db4d928292cbde[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Jan 11 13:48:19 2026 -0300
+
+    Aula 228: Threads pt 09 - Synchronizing threads pt 05 - Wait, notify, notifyAll
+
+[33mcommit c8e0b64dad8c131d851868c1857105e4c2ca56eb[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Jan 11 12:37:58 2026 -0300
+
+    Aula 227: Threads pt 08 - Synchronizing threads pt 04 - Deadlock
+
+[33mcommit 562b19d5e73c06783f8ef492bb587fe3228512d8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Jan 11 12:11:19 2026 -0300
+
+    Aula 226: Threads pt 07 - Synchronizing threads pt 03 - Thread safe classes
+
+[33mcommit 609b2aa8a32d95fc05ab185285419c54e19f2d02[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Jan 10 10:45:55 2026 -0300
+
+    Aula 225: Threads pt 06 - Synchronizing threads pt 02
+
+[33mcommit a0d6cca1b12ba85a613dfffb60a3b2c0cb78a64d[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Jan 9 12:03:23 2026 -0300
+
+    Aula 224: Threads pt 05 - Synchronizing threads pt 01
+
+[33mcommit eb8e153b2d80c1e67b54f5bd5867fc3b8899a53d[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Jan 9 11:22:54 2026 -0300
+
+    Aula 223: Threads pt 04 - Yield and Join
+
+[33mcommit 54ebf201bb5427472fc5ac7c9f7fb1e060f442b4[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Jan 9 10:58:31 2026 -0300
+
+    Aula: 222: Threads pt 03 - Thread priority and sleep
+
+[33mcommit 0ccaf35621c0773fb384c7f7fa2b040c47f5470a[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Jan 8 11:54:22 2026 -0300
+
+    Aula 220: Threads pt 01 - Introduction
+
+[33mcommit 30fc0c36b9a924e887045f1d225fa65f03f3fbf2[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Jan 8 11:04:54 2026 -0300
+
+    test: testando lambdas
+
+[33mcommit 85bb1d12ca3476e85c56c72d0001489af1b407a7[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 29 10:32:54 2025 -0300
+
+    docs: Pipeline dividido em dois passos para melhorar a legibilidade.
+
+[33mcommit 63bfc7d4204f704a4c796ce0bae13576755e5dc8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 29 10:08:34 2025 -0300
+
+    test: Streams exercise
+
+[33mcommit a9a023827d339fbdaf554f5e97427f59334094ad[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Dec 28 12:23:06 2025 -0300
+
+    test: Streams
+
+[33mcommit 56d5588c6c9f289d0bc4bb7fa7fbc17e679d3dcc[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Dec 27 10:05:00 2025 -0300
+
+    Aula 218: Streams pt 16 - Parallel Streams pt 01 (teste com Parallel Stream)
+
+[33mcommit 6642602e6d869f675b636e5a072165021d05a47a[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 26 13:42:24 2025 -0300
+
+    Aula 218: Streams pt 16 - Parallel Streams pt 01
+
+[33mcommit e591b326dee2a9b3ddb987fec012e20ab15f1d24[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 26 13:15:36 2025 -0300
+
+    Aula 217: Streams pt 15 - Collectors pt 05 - Grouping by pt 04
+
+[33mcommit 070fcc43f1f7ec4d8cc2c1db810bec73041c6565[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 26 11:35:05 2025 -0300
+
+    Aula 216: Streams pt 14 - Collectors pt 04 - Grouping by pt 03
+
+[33mcommit 2bf250e7603e05599301c426588650bebe180f09[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 26 11:01:25 2025 -0300
+
+    Aula 215: Streams pt 13 - Collectors pt 03 - Grouping by pt 02
+
+[33mcommit 340f43c7ea936e72ea6c96ec10309dedc646ad0a[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 26 10:33:03 2025 -0300
+
+    Aula 214: Streams pt 12 - Collectors pt 02 - Grouping by pt 01
+
+[33mcommit e8a5fdeffa4c3155385631871c5a568b6f56a36a[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 23 12:35:16 2025 -0300
+
+    Aula 213: Streams pt 11 - Collectors pt 01 Summarizing
+
+[33mcommit 0ba2756242250139713293dfc81ab94134e09c89[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 23 12:09:32 2025 -0300
+
+    Aula 212: Streams pt 10 - Gerando streams pt 02
+
+[33mcommit 2dddfe76adeb7de3312ba5071b5722033af0bb3b[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 23 11:25:22 2025 -0300
+
+    Aula 211: Streams pt 09 - Gerando streams pt 01
+
+[33mcommit 3de810243a812fff1534f62e9ec42d6276ca1825[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 23 11:00:01 2025 -0300
+
+    docs: Adiciona anotacao explicando abordagens de soma com Stream
+
+[33mcommit b06ccb58c64ad02d5cf2b16c38a6a0ae48138824[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 19 12:26:20 2025 -0300
+
+    Aula 210: Streams pt 08 - Reduce pt 02
+
+[33mcommit 33fa40007233de85a8d8c3af836857068e745404[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 19 11:56:07 2025 -0300
+
+    Aula 209: Streams pt 07 - Reduce pt 01
+
+[33mcommit 38a0fbe97c24edcb5b761e7f9ba5e0ea8951264b[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 19 11:10:23 2025 -0300
+
+    Aula 208: Streams pt 06 - Finding and Matching
+
+[33mcommit 8ad27c844ac6ae66133fcb7693f56eb9e59153ec[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 19 09:37:52 2025 -0300
+
+    refactor(ZZE_Streams/test): Move as classes Student e Classroom para a raíz do pacote test
+
+[33mcommit fbb16254dfd7c123a5bc1154508e203076f21ea5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Dec 19 09:18:40 2025 -0300
+
+    feat(ZZE_Streams): Implementa um duplo flatMap para extrair matérias únicas de alunos aprovados
+
+[33mcommit df22bbac5d74f63e0f758370fdf9ad6e7a610822[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Dec 18 15:23:16 2025 -0300
+
+    test: Refatora StreamTest04 para usar objetos Student e lógica de filtro
+
+[33mcommit c6805c267ad697458d03fdea0551b5b6f1cb249e[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Dec 18 15:06:13 2025 -0300
+
+    Aulas 206 e 207: Streams pt04/pt05 - FlatMap
+
+[33mcommit e548dca956c5c2d01a945fce14c25349a4ae80a7[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Dec 17 12:16:24 2025 -0300
+
+    Aula 205: Streams pt 03 - Introduction pt 03
+
+[33mcommit c684368fe16d0da7d236f8734e0f389334ab8234[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 16 12:32:49 2025 -0300
+
+    Aula 204: Streams pt 02 - Introduction pt 02
+
+[33mcommit 422a4fe5f02636172f17199d2664b162b5da36bf[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 16 12:07:08 2025 -0300
+
+    Aula 203 - Streams pt 01 - Introduction pt 01
+
+[33mcommit 22789959c38148f18ae87a2bb67584896a523bdf[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 15 13:04:34 2025 -0300
+
+    refactor(ZZD_Optional.test): Troca o uso de  por  no método
+
+[33mcommit 122cdc4535a1d506d0251c4daed90e75c9bf9a96[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 15 12:24:26 2025 -0300
+
+    Aula: 202 - Optional pt 02
+
+[33mcommit f0ae3d9ae87f087e6cb86bb443c86ba8325321dd[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 15 11:57:18 2025 -0300
+
+    Aula 201 - Optional pt 01
+
+[33mcommit 30dc11895fb367e24b5f7dc2e21febcc50b8a176[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Dec 14 12:26:17 2025 -0300
+
+    Aula 200: Method Reference pt 03 - Referência a construtor
+
+[33mcommit 38847c62440c1ba40a734e96ffe807d86a6939de[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Dec 14 11:35:05 2025 -0300
+
+    Aula 199: Method Reference pt 02 - Referência a métodos não estáticos
+
+[33mcommit b3149ab7779dc0104584b23f63da9d5680eef105[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Dec 13 11:05:21 2025 -0300
+
+    test(ZZA_InnerClasses): Implementa e testa classes anonimas
+
+[33mcommit 039266c3fbe4898d10c5137d64d20b5a0a103c83[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Dec 13 10:09:23 2025 -0300
+
+    Aula 198: Method Reference pt 01 - Referência a métodos estáticos
+
+[33mcommit c9e162269fb4527e5ce1a109694f57bc7e167979[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 9 11:55:06 2025 -0300
+
+    Aula 197: Lambdas pt 03 - Function
+
+[33mcommit 0f705c1ca88850ca8b330c03ff9cae928ec865d1[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Dec 9 11:47:36 2025 -0300
+
+    Aula 195, 196: lambdas
+
+[33mcommit 6d3d0f80048d019970b210c254c0fac9422b5ec9[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 8 12:17:17 2025 -0300
+
+    Aula 193, 194: Parametrizando comportamentos
+
+[33mcommit 8280bd00e39e419d0fb023ccee97d8666af05d28[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 8 11:32:04 2025 -0300
+
+    Aula 192: Classes Internas pt 04 - Classes aninhadas estáticas
+
+[33mcommit 3e944dbb4cd3ebdd8de944642b342416db9f75fe[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 8 11:06:13 2025 -0300
+
+    Aula 191: Classes Internas pt 03 - Classes Anônimas
+
+[33mcommit d9651e7d696864b9b61be669478ce3f52211c3d9[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Dec 1 12:01:10 2025 -0300
+
+    test(generics): Praticando o uso de wildcards
+
+[33mcommit f33d3534352f1b28c914aed826e6e92266476cee[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Nov 26 11:47:16 2025 -0300
+
+    Aula 190: Classes Internas pt 02 - Classes Locais
+
+[33mcommit 1c227e285fdc7f306bade108cbaa4b56a7c66007[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Nov 26 11:16:38 2025 -0300
+
+    Aula 189: Classes Internas pt 01 - Introdução
+
+[33mcommit 69c5eb34303dc17ea4ed4be98e2d623cefd91b10[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Nov 26 10:46:19 2025 -0300
+
+    test: Testa as funcionalidades de metodos genéŕicos
+
+[33mcommit 2bfabea6e7ea39e5f9ba4270f82d4b4acf10b5f0[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Nov 26 10:18:23 2025 -0300
+
+    Aula 188: Generics pt 06 - Métodos Genéricos
+
+[33mcommit 5ed772a57c720c93479caf34f5316c2b994838b5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Nov 22 11:53:33 2025 -0300
+
+    Aula 187: Generics pt 05 - Classes Genéricas pt 02
+
+[33mcommit 8be996bdc4401ded7fcbffc7ebe4323fc2ee61f1[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Nov 21 14:28:25 2025 -0300
+
+    Aula 183-186: Generics
+
+[33mcommit f499aa89a3208b9b2c1cd7c845eca4c1514abbd8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 20 19:25:36 2025 -0300
+
+    aula(Collections): Testa o funcionamento do Iterator nas collections
+
+[33mcommit 41ec83b346edcd54bdd1ce5746aa1983cca7a0c5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 20 19:09:50 2025 -0300
+
+    aula(Collections): Testa o comportamento de TreeMap
+
+[33mcommit 425d9e2fe890af2d961942a33b1228b3027dcf46[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 20 19:04:44 2025 -0300
+
+    aula(Collections): Testa o comportamento de HashMap
+
+[33mcommit 69907b616d5dd18ca4048ff0484c9864bef08cc8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 20 18:28:30 2025 -0300
+
+    feat: Testa o funcionamento do Java List Sorting
+
+[33mcommit 5f5e42f045cbbcb9722b12830cd22779b7698243[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 20 09:58:52 2025 -0300
+
+    aula  181: Coleções pt 21 - NavigableMap, TreeMap
+
+[33mcommit 40077da26352b910cf67ea0bdb364dfde55c3dff[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Nov 19 12:45:52 2025 -0300
+
+    feat: sistema de gerenciamento de assinaturas
+    
+    Implementação das entidades, camada de serviço, exceções personalizadas e geração de relatório para praticar java puro
+
+[33mcommit ed86fbaebcc08715e9dba636d3d0ca69d6a1c3e0[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 6 12:18:35 2025 -0300
+
+    aula Collections Framework(Set/HashSet): Testa o comportamento de Set
+
+[33mcommit efd68471ee4cc4e682c5469c36bde20f3b43e725[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Nov 6 11:48:33 2025 -0300
+
+    aula: Collections framework (ArrayList): Testa o comportamento de uma ArrayList
+
+[33mcommit 1585641a4b9e191a450479e4c3604611fc303026[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Oct 28 19:36:37 2025 -0300
+
+    test(Collections): Testa a implementação de Comparator
+
+[33mcommit 30d55e000de90baedf33c1fdcd6deefa43832fc1[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Oct 28 19:06:52 2025 -0300
+
+    test(Collections): testando a implementação de Comparable
+
+[33mcommit c0a057eee9d5cf23559a0dff67ab971d3aaf901e[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Oct 26 17:38:13 2025 -0300
+
+    Aula 180: Coleções pt 20 - Map, HashMap, LinkedHashMap pt 03
+
+[33mcommit 2316d372a010095c06d3b0475a4563488732b430[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Oct 26 17:03:02 2025 -0300
+
+    Aula 179: Coleções pt 19 - Map, HashMap, LinkedHashMap pt 02
+
+[33mcommit 0b2ece214446efedace7c5371c526e36788b5d93[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sun Oct 26 12:20:42 2025 -0300
+
+    Aula 178: Coleções pt 18 - Map, HashMap, LinkedHashMap pt 01
+
+[33mcommit 9cced2fafd0abde1be6f0fb7255a88044eba6ca8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Oct 25 11:28:34 2025 -0300
+
+    Aula 177: Coleções pt 17 - NavigableSet, TreeSet pt 02
+
+[33mcommit 2f8532531c07806340e9d717579e457f6ae86610[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Oct 24 12:47:02 2025 -0300
+
+    Aula 176: Coleções pt 16 - NavigableSet, TreeSet pt 01
+
+[33mcommit fe3052b72aa9cfbc0a89453865698fb5dd8bc543[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Oct 24 11:17:30 2025 -0300
+
+    test: Testa o funcionamento do metodo removeIf direto na colecão, eliminando a necessidade de declarar um Iterator antes
+
+[33mcommit ef0fda133767966eeb0baf09cd00bb5752a276e9[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Oct 24 11:04:00 2025 -0300
+
+    test: Adiciona testes para manipulacão segura de listas com ListIterator
+
+[33mcommit 52f050e0eef4ee0b5be199e09c7fb5de361b5675[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Thu Oct 23 16:53:51 2025 -0300
+
+    Aula 175: Coleções pt 15 - Set, HashSet
+
+[33mcommit c8286102bd8f81c4c51b054442aec8595bb1727f[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Oct 22 16:26:51 2025 -0300
+
+    Aula 174: Coleções pt 14 - Iterator
+
+[33mcommit 269bca3820d0307f4d5a5e1dbd6c179019ebe448[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Oct 21 17:20:17 2025 -0300
+
+    Aula:  173 - Coleções pt 13 - Conversão de Lista para Arrays e vice versa
+
+[33mcommit b40a5c0425a6978753c8bdb651549505e84b9237[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Oct 20 20:25:51 2025 -0300
+
+    Aula:  172 - Coleções pt 12 - Binary Search
+
+[33mcommit 23fe46cb358417e1059986c1eeac5a1d8c58f299[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Oct 20 19:30:12 2025 -0300
+
+    Aula  171: Coleções pt 11 - Sorting lists pt 03 - Comparator
+
+[33mcommit 98e7955ffa86a6acaaf962400a5f6b687123c86d[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Oct 20 13:20:41 2025 -0300
+
+    Aula 170: Coleções pt 10 - Sorting lists pt 02 - Comparable
+
+[33mcommit f4fbac0cf9702019622bd06424d557a30aa01b71[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Oct 20 12:19:52 2025 -0300
+
+    Aula 169: Coleções pt 09 - Sorting lists pt 01
+
+[33mcommit efea74b6b5dc04a3878becc6a9d7ff9d915d13cd[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 22 17:17:31 2025 -0300
+
+    Aula: 168 - Coleções pt 08 - List pt 03
+
+[33mcommit e16c8085dc7312e0eed091b371d8d981eb01ab15[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 22 17:01:15 2025 -0300
+
+    feat(SmartPhone): Implementa os métodos equals, hashCode e toString à classe SmartPhone.
+
+[33mcommit 927d66fe264c59b2cd389742e0cc9f8eb5046df5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 22 16:50:06 2025 -0300
+
+    Aula:  167 - Coleções pt 07 - List pt 02
+
+[33mcommit 46ccab0642c75036acb29237db137ced12f35e56[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 22 16:12:56 2025 -0300
+
+    Aula:  166 - Coleções pt 06 - List pt 01
+
+[33mcommit 395637ada04afa3aeaf80d12a7ab5388c6c46918[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Sep 20 09:44:40 2025 -0300
+
+    Aulas: 163/164 - Coleções pt 03 e 04 - hashCode
+
+[33mcommit 8cb67ce0f645d867a7abe8f133c16c9d59158de3[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Sep 20 09:11:33 2025 -0300
+
+    Aula:  162 - Coleções pt 02 - equals pt 02
+
+[33mcommit d6f31f23c366f1965b6001140563f37887272864[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Sep 20 08:36:49 2025 -0300
+
+    Aula:  161 - Coleções pt 01 - equals pt 01
+
+[33mcommit 7986ea2f57dcda52a082330455519a45d6b2b809[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Sat Sep 20 07:52:10 2025 -0300
+
+    Aula:  160 - Classes Utilitárias - Serialization pt 02
+
+[33mcommit 3b3907cd542c19d70443aee6d535daae04bec9f1[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Fri Sep 19 17:55:37 2025 -0300
+
+    Aula:  159 - Classes Utilitárias - Serialization pt 01
+
+[33mcommit f74e97078197a393e9e2fdafb7ce42bb63dc3885[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 14:14:03 2025 -0300
+
+    Aula: 158 - Classes Utilitárias - NIO pt 15 - ZipOutputStream
+
+[33mcommit ed76fa9dc68eb8f3e608fe9c3062958b074615c7[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 13:57:21 2025 -0300
+
+    Aula:  157 - Classes Utilitárias - NIO pt 14 - PathMatcher pt 02
+
+[33mcommit 21f044bca515253fcff8ceaa089a8e8ae390abf6[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 13:45:06 2025 -0300
+
+    Aula:  156 - Classes Utilitárias - NIO pt 13 - PathMatcher pt 01
+
+[33mcommit 5789683461c8abd7797596dd68e7568ff539adf9[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 13:14:50 2025 -0300
+
+    Aula:  155 - Classes Utilitárias - NIO pt 12 - SimpleFileVisitor pt 02
+
+[33mcommit db67b58104dc4caa909cfc02ca26c4f8b0d9a1aa[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 12:57:10 2025 -0300
+
+    Aula:  154 - Classes Utilitárias - NIO pt 11 - SimpleFileVisitor pt 01
+
+[33mcommit 77815f5713487b13fdd118f67140a3d99b19b18c[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 12:39:41 2025 -0300
+
+    Aula:  153 - Classes Utilitárias - NIO pt 10 - DirectoryStream
+
+[33mcommit 0fa8a947e44cf0a6db0756896852876a9ead0d98[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 12:31:45 2025 -0300
+
+    Aula:  152 - Classes Utilitárias - NIO pt 09 - PosixFileAttributes
+
+[33mcommit 89b17280c82455759f696aef4570b75ac1b7a7b6[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 12:03:21 2025 -0300
+
+    Aula:  151 - Classes Utilitárias - NIO pt 08 - DosFileAttribute
+
+[33mcommit 0c0b22cc4e987d489e8c70fbaa957c2220e18c86[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Wed Sep 17 11:50:44 2025 -0300
+
+    Aula:  150 - Classes Utilitárias - NIO pt 07 - BasicFileAttributes pt 02
+
+[33mcommit 0278bd7ad12b5ddbba07c1d4aa4cbf4f425fde49[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Sep 16 09:54:45 2025 -0300
+
+    Aula:  149 - Classes Utilitárias - NIO pt 06 - BasicFileAttributes pt 01
+
+[33mcommit 6a63b6af437c8018a366e3934618856ce68f4b52[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Sep 16 09:33:15 2025 -0300
+
+    fix: Corrige o nome do pacote W_NIO
+
+[33mcommit 094c6ab85cbdd0aa42ada9758293a3573b51cb26[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Tue Sep 16 09:01:16 2025 -0300
+
+    Aula:  148 - Classes Utilitárias - NIO pt 05 - Relativize
+
+[33mcommit 336883ca24d45ed8e00b6224dcb5429f75a4fb8e[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 16:06:58 2025 -0300
+
+    Aula:  147 - Classes Utilitárias - NIO pt 04 - Resolvendo Paths
+
+[33mcommit f0802d9b14ad2ed25eb96c3d8305f213d7fa19d5[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 15:51:38 2025 -0300
+
+    Aula:  146 - Classes Utilitárias - NIO pt 03 - Normalização
+
+[33mcommit 8b768e9a524692b32cb26d5b0aa083fc5a4a62ca[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 15:26:53 2025 -0300
+
+    Aula:  145 - Classes Utilitárias - NIO pt 02 - Path, Paths, Files pt 02
+
+[33mcommit 373e75d0f7f7f760b27b0c927dd2cd3885f742b8[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 14:43:45 2025 -0300
+
+    Aula:  144 - Classes Utilitárias - NIO pt 01 - Path, Paths, Files pt 01
+
+[33mcommit 5748044ab903b80f1ad4df0423d040421657258e[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 14:26:15 2025 -0300
+
+    (revisao)Aula: 143 - Classes Utilitárias - IO pt 06 - File para diretórios
+
+[33mcommit 97340b4852d336d856d03e6b837c41031dd4cf42[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 14:24:19 2025 -0300
+
+    (revisao)Aula: 143 - Classes Utilitárias - IO pt 06 - File para diretórios
+
+[33mcommit 6481488a769dec0a4e4da2626ed0b9965d0daa43[m
+Author: DANR1BEIRO <danribeirodev@gmail.com>
+Date:   Mon Sep 15 13:29:02 2025 -0300
+
+    Fix: Corrige a estrutura do projeto para o diretório raiz
+
+[33mcommit a6fe8ca4630032a400488fd26ca7175b72bad303[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jul 4 10:48:10 2025 -0300
+
+    aula:  143 - Classes Utilitárias - IO pt 06: File para diretórios
+
+[33mcommit db9c6a5a8423616621948c4036d723d7498f049c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jul 4 10:13:45 2025 -0300
+
+    aula:  142 - Classes Utilitárias - IO pt 05: BufferedReader
+
+[33mcommit 16833bf12a1877bd0a5475474d9adae7cd8068bf[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 13:00:04 2025 -0300
+
+    feat: testing Bufferedwriter and BufferedReader classes
+
+[33mcommit 12b1bc78e9e7cf8737c1185d401ed488ca3cd05d[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 12:38:59 2025 -0300
+
+    aula:  141 - Classes Utilitárias - IO pt 04: BufferedWriter
+
+[33mcommit 0b4f16062010346557e0ae76ef169dfed2b909f3[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 12:28:49 2025 -0300
+
+    aula:  140 - Classes Utilitárias - IO pt 03: FileReader
+
+[33mcommit 4c5d27386862559f307d0c8919c4d82e5c91099b[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 12:12:24 2025 -0300
+
+    aula: 139 - Classes Utilitárias - IO pt 02: FileWriter
+
+[33mcommit 6e274ac7ce3f4101bbf748e97e8a7f54ac306f65[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 11:53:09 2025 -0300
+
+    aula:  138 - Classes Utilitárias - IO pt 01: File
+
+[33mcommit 2404fb914ec405e57c7103e3e69191bf1c5671b8[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 11:36:01 2025 -0300
+
+    aula: 137 - Classes Utilitárias - Scanner: Tokens e Delimitadores
+
+[33mcommit b09148e1301fbbd4788b9471d335debbf50c0618[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 10:20:35 2025 -0300
+
+    aula:  135 - Classes Utilitárias - Regex pt 05 - Pattern e Matcher: Quantificadores pt 02
+
+[33mcommit 8bb59162131b3b5111810db33702451c03f93f47[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 09:26:56 2025 -0300
+
+    aula:  134 - Classes Utilitárias - Regex pt 04 - Pattern e Matcher: Quantificadores pt 01
+
+[33mcommit 3499699432a41726475e4a7adf0612dcc162a969[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jul 3 09:16:48 2025 -0300
+
+    aula:  133 - Classes Utilitárias - Regex pt 03 - Pattern e Matcher: Range
+
+[33mcommit 36ec5bbe42e3605fe36989e86ee4cf4517a47625[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Wed Jul 2 12:22:17 2025 -0300
+
+    aula: Regex practice
+
+[33mcommit 6482a747589a0b188ed8e52490213e73a4609a9b[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Wed Jul 2 10:58:34 2025 -0300
+
+    aula:  132 - Classes Utilitárias - Regex pt 02 - Pattern e Matcher: Meta caracteres
+
+[33mcommit 03131cbc6f1a09ea083c2ad65f9c008e499b5e48[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Tue Jul 1 10:41:48 2025 -0300
+
+    aula:  131 - Classes Utilitárias: Regex pt 01 - Pattern e Matcher
+
+[33mcommit 016724fd820d10d5994cce5a65165152cec0e22a[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sat Jun 28 12:22:34 2025 -0300
+
+    feat: ResourceBundle: Cria interface inicial de um site simples com selecão de idioma e mensagem de boas vindas
+
+[33mcommit 222e3e5e8ff50c129fb3730fe5af44449c9ff469[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 27 12:29:26 2025 -0300
+
+    aula:  130 - Classes Utilitárias: ResourceBundle
+
+[33mcommit 34a6434236a8a7eb0016dfa68678f4aff623c289[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 27 11:07:57 2025 -0300
+
+    aula:  129 - Classes Utilitárias: DateTimeFormatter
+
+[33mcommit ddddee22b2fb84c731d844da7638031bf44cf33c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 26 10:41:41 2025 -0300
+
+    aula:  128 - Classes Utilitárias: ZonedDateTime, ZoneId, OffsetDateTime
+
+[33mcommit 919c1f5bde6529c1245c102b02ae469615a61b6d[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Wed Jun 25 14:49:22 2025 -0300
+
+    aula:  127 - Classes Utilitárias: TemporalAdjuster
+
+[33mcommit e7b76ecea6539ecff0418b2a24bcac768d604bbb[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Tue Jun 24 12:42:31 2025 -0300
+
+    aula:  126 - Classes Utilitárias: TemporalAdjusters.
+
+[33mcommit 9a65fecc279a048e554610d5413ef7323de0d974[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Tue Jun 24 11:44:36 2025 -0300
+
+    aula:  125 - Classes Utilitárias: ChronoUnit
+
+[33mcommit 8124485302b94b27d840406b4cb241bf77919bba[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 23 13:17:07 2025 -0300
+
+    aula:  124 - Classes Utilitárias: Period
+
+[33mcommit dfa097a5bc699c01e857172b2c85645b666b6c9b[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 23 11:10:03 2025 -0300
+
+    aula:  123 - Classes Utilitárias: Duration
+
+[33mcommit 777138256e25185dbef62d3297f43377f528f0f0[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 23 10:36:19 2025 -0300
+
+    aula:  122 - Classes Utilitárias: Instant
+
+[33mcommit 96c97b9033530b27b585847df557bcdcd0a19a85[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sun Jun 22 10:15:25 2025 -0300
+
+    aula:  121 - Classes Utilitárias: LocalDateTime
+
+[33mcommit e78449d90af5d7970e70fbb35fe14c2b91e2c527[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sat Jun 21 16:11:44 2025 -0300
+
+    aula:  120 - Classes Utilitárias: LocalTime
+
+[33mcommit 66ed557120189a84155bdb577913fb05f4fa7c7d[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sat Jun 21 16:04:55 2025 -0300
+
+    aula:  119 - Classes Utilitárias: LocalDate
+
+[33mcommit acc47c212c83bf4d62d2e0e53642814b913fbcc2[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sat Jun 21 15:21:09 2025 -0300
+
+    aula:  118 - Classes Utilitárias: SimpleDateFormat
+
+[33mcommit 88787191486fc50cbb009761220b1398948c599c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sat Jun 21 14:24:52 2025 -0300
+
+    aula:  117 - Classes Utilitárias: Internacionalização de moeda com Locale
+
+[33mcommit b3271231be48e67679f029d14f4b38feec88d89e[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 9 13:55:25 2025 -0300
+
+    Aula  116 - Utility Classes: Number Internationalization with Locale + README
+
+[33mcommit 003825e4c3d60661cee5b70ca1a5ac3777bf8a7a[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 9 13:15:14 2025 -0300
+
+    Aula  115 - Utility Classes: Date Internationalization with Locale+ README updated
+
+[33mcommit 3b55b94579a92576ea004ef1b7cde90f995ce2c1[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 9 12:27:49 2025 -0300
+
+    Aula  114 - Utility Classes: DateFormat + README updated
+
+[33mcommit ce5a525cc760c9a526b2748d35751732bdaaad2e[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 9 11:54:49 2025 -0300
+
+    Aula  113 - Utility Classes: Calendar + README updated
+
+[33mcommit 2bfe35c5752a4f43b03d7bbbf5455b800b4a573d[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Jun 9 11:24:34 2025 -0300
+
+    Aula  112 - Utility Classes: Date + README
+
+[33mcommit 333c247f35d5714d619d5a65bd0c0b71bde5a34a[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sun Jun 8 12:14:40 2025 -0300
+
+    Aula  111 - Utility Classes - String pt 05: StringBuilder + README updated.
+
+[33mcommit d387cd416461f6d3e5492b80bf8dd5225010f5fa[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sun Jun 8 10:46:05 2025 -0300
+
+    README updated
+
+[33mcommit ce985d8fa45f7c5c1f0dd9950ba7c1863ae09bda[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 6 15:34:47 2025 -0300
+
+    Aula  110 - Utility Classes - String pt 03: Performance
+
+[33mcommit ddcfb4a10781b0030abb8c73ceb56639c0e19143[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 6 12:21:33 2025 -0300
+
+    Aula  109 - Utility Classes: String pt 02
+
+[33mcommit e828d9c6f251254efc2c58b4fe617bf15b9395d9[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 6 10:38:14 2025 -0300
+
+    Aula 108 - Utility Classes: String pt 01 + README
+
+[33mcommit 48ef39f91327675617af82abf14b498e007f0789[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Fri Jun 6 10:04:10 2025 -0300
+
+    Criado o README de wrappers
+
+[33mcommit 84d65d900795c4083e02a95f0a1f77802eb9286c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 18:16:50 2025 -0300
+
+    Update README
+
+[33mcommit 645a5c418243a90de852230b5a869a35f18f7252[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 17:58:14 2025 -0300
+
+    Aula
+    106 - Utility Classes: Wrapper pt 01
+
+[33mcommit c6bde69a5cd80174cc04aa967aad4216e1e4caba[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 17:57:06 2025 -0300
+
+    Aula 105 - Exceptions pt 11: Overriding rules
+
+[33mcommit d04a5ef2da9659c1bd6b65201298d03e33686797[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 17:35:07 2025 -0300
+
+    Aula 104 - Exceptions pt 10: Custom Exception
+
+[33mcommit cc984134e4ac07b0c78263dc54a8b2a2041f4f8c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 13:12:19 2025 -0300
+
+    Update README.md
+
+[33mcommit 5bb6074f03ea2caa504c7827c383c4a7f27f03e8[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 13:08:37 2025 -0300
+
+    Aula  103 - Exceções pt 09 - Try with resources/README atualizado.
+
+[33mcommit b4b3a64082346f9d35ef65e05d4664f6c08c4c72[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 12:00:03 2025 -0300
+
+    102 - Exceções pt 08 - Multi catch em linha
+
+[33mcommit 118c6c818d98f5ce3dc33a8be988ffa2b30cbb30[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 11:32:51 2025 -0300
+
+    Aula 101 - Exceptions pt07: Capturando múltiplas excecoes. README atualizado.
+
+[33mcommit e5b0f575ab8351ff10a04c2dc3a2094fea92cca7[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Jun 5 09:37:49 2025 -0300
+
+    runtime e test
+
+[33mcommit 93c545157baf31f51baf10b7cf7b0ed7c19cfc4b[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue May 27 11:15:08 2025 -0300
+
+    Aula 100 - Exceptions pt 06: Finally Block
+
+[33mcommit 2172314600e07535df0700366b6ca79178a869b5[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon May 26 20:29:13 2025 -0300
+
+    Aula 99 - exceções pt 05: Lançando exceções checked
+
+[33mcommit af847c282c05e2b754b1a429ab0254041663a650[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon May 26 20:00:43 2025 -0300
+
+    Aula 98 - Exceções pt 04: Lançando exceções unchecked
+
+[33mcommit b4dc7c0c53f42a0086e80ce55f7448f6049a261e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu May 22 16:09:37 2025 -0300
+
+    DevDojo Aula 98 - Lancando excecao unchecked
+
+[33mcommit 5ac42b423cf704b844d63c93bafe5bcf4e164d55[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu May 22 15:41:58 2025 -0300
+
+    DevDojo aula 97: Exception
+
+[33mcommit 31369063da534ef9c85ff4f1557d5fecc9234eb6[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon May 19 18:26:18 2025 -0300
+
+    Aula 94: Interface Oriented Programming
+
+[33mcommit 88707c8910e26080b183572a41d5855889de01f7[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon May 19 18:09:12 2025 -0300
+
+    Aula 93 - Cast e instanceof
+
+[33mcommit 99778c58e7958c4e9e2f950a92024aa031a4ec8c[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon May 19 16:21:01 2025 -0300
+
+    Update README.md
+
+[33mcommit fb62a372e7f486060af0b6769c0a2331a0ff6bc5[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon May 19 16:11:02 2025 -0300
+
+    Update README
+
+[33mcommit cbe87c3e114dbf4bb131861f8d54cccd3d697415[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun May 18 23:28:08 2025 -0300
+
+    Aula 95: Exceptions pt1 - Errors (StackOverFlow)
+
+[33mcommit c52294f537fec2756f801d57663cc59bdd97fcec[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun May 18 13:54:06 2025 -0300
+
+    .
+
+[33mcommit 7c8c7fd868cc628050433d52ed58956419ea64c9[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun May 18 13:51:31 2025 -0300
+
+    Programming Logic Exercises: ex23 - Calculate the net salary of a teacher
+
+[33mcommit bae214dc2fd6026a26fddf971b047eef55e5064a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 20:52:04 2025 -0300
+
+    Polimorfismo: Adicionada uma classe Eletronic que estende Product e aplicando a regra de negócio de taxa fixa para eletrônicos, diminuindo a repetição de código onde cada classe precisava implementar seu próprio método de calcular imposto
+
+[33mcommit 0b4745d4500ee0fa1c2e12967b6a65d0b5587cfa[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 20:39:45 2025 -0300
+
+    Aula 92: Polimorfismo pt3 - Parâmetros Polimórficos - Added a new method that takes a superclass reference as a parameter to accept a subclass object. Created a new object to test the Polymorphism Extensibility
+
+[33mcommit 303b27250a75f9ca375fc06d79d7a39d6a9a36d2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 20:04:59 2025 -0300
+
+    Trocada a referência do objeto Tomato; o objeto fica inacessível e será coletado pelo garbage collector porque ficou sem referência.
+
+[33mcommit 707088f9a51840424362bf0073ed160d3035e18a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 14:21:14 2025 -0300
+
+    Add a README to explain what happend when we use a Interface reference (more generic) and when we use a Object reference (more specific)
+
+[33mcommit 6a5445cd43030717415c9a3dae5ce21919197b5a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 14:17:30 2025 -0300
+
+    Aula 91: Polimorfismo pt02 - Funcionamento
+
+[33mcommit 5615fe490161e3f4898602076644766e2ac91806[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 27 13:28:17 2025 -0300
+
+    Testing decoupling code
+
+[33mcommit 6c521cec40b84e74a6f0c079d39545188fc8273a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 21:22:24 2025 -0300
+
+    updating README
+
+[33mcommit af4849a41098ad0b10a83a9d76950f167ec0c010[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 21:18:42 2025 -0300
+
+    Testing polymorphism: Add a for loop to iterate through each object that implements the interface Robot
+
+[33mcommit e44d7ecada8fb7cbcff88f7fd7b8474c1f5ec215[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 03:43:10 2025 -0300
+
+    Interface test
+
+[33mcommit 2beea6ff8606a2c3ac9e932e2e823d246da5bd1d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 03:38:55 2025 -0300
+
+    Aula 90: Polimorfismo pt 01
+
+[33mcommit ff39ec57cbea127bc3f27b019bcba9e252ee995c[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 00:57:44 2025 -0300
+
+    Add AmphibiousRobot class implementing Flyer and Swimmer with custom move() method
+
+[33mcommit 9be168b7d0d74bc63c308e9b8bc212520200213d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 26 00:22:04 2025 -0300
+
+    Add run instructions and visual button to README
+
+[33mcommit 647fa1958c5246d4cdd9f5cc6a950517cba4629a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Apr 25 19:50:26 2025 -0300
+
+    Testing interfaces
+
+[33mcommit b64b94b288061e18c5661bb4159fa8970ae72961[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 24 04:46:03 2025 -0300
+
+    Aula 88: Interface pt02 - Implementando múltiplas interfaces
+
+[33mcommit 45dcfc914bc9452ad7177519496c009c78f9bf04[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 24 04:29:39 2025 -0300
+
+    Aula 87: Interfaces pt1 - introdução
+
+[33mcommit a047aca41125e4aad8359cb5fb7429c73e0e4fff[m
+Merge: 9157f7b cafc7fd
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 24 03:17:39 2025 -0300
+
+    Merge branch 'main' of https://github.com/DANR1BEIRO/JAVAXP
+
+[33mcommit 9157f7b9ecfb9debfaf6d06bfffa3aef356fec99[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 24 03:16:32 2025 -0300
+
+    Added a system that manages the robots: A method to add robots in the list, a method to turn all robots on, turn all robots off, perform tasks on all and show the status of all robots.
+
+[33mcommit cafc7fd64326017738db5a7bbfc90dcad56c8281[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Thu Apr 24 01:27:16 2025 -0300
+
+    Update README.md
+
+[33mcommit 9278a225d4f592becf1ccf6575a364719966d9b4[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 23 13:47:16 2025 -0300
+
+    Testing abstract classes and abstract methods
+
+[33mcommit c236e4bc959b3eb6d9cd353abd1b0aa5e7d7659a[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 23 12:48:49 2025 -0300
+
+    Refatorei a criação dos objetos no main. Modo de criação anterior: Subclasse + variável de referencia = new subclasse. Agora: Super abstrata + variável de referência = new subclasse. Deixa o código bem mais limpo e fácil de ler.
+
+[33mcommit 8e9aaded735003ce14a67987387f31aa4cca4dd1[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Apr 22 12:12:50 2025 -0300
+
+    Some exercises to implement and test concepts such as: Abstract classes and methods, inheritance and polymorphism.
+
+[33mcommit 3263d0b841216c362b19085d8fe3a08afd051393[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Apr 22 01:56:01 2025 -0300
+
+    Abstract classes test
+
+[33mcommit 806e5cfac595724de324e20cff176af508604e3f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 23:22:09 2025 -0300
+
+    Aulas: 84: Classes abstratas, 85: Classes abstratas pt2 - Métodos abstratos, 86: Classes abstratas pt3 - métodos abstratos e suas regras
+
+[33mcommit 7e34a3fc35ba0096e473ee99b1f78f363d23ea13[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 19:51:45 2025 -0300
+
+    Aula 82: Enum pt3 - Sobrescrita de métodos. README atualizado.
+
+[33mcommit 82c097a984f10d77c04ecfa6a2cb10f26ca7f189[m
+Merge: a49c2af e69f7db
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 19:16:17 2025 -0300
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit a49c2afb4b1d4fce5bc52c94e5e28928273ede00[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 19:14:47 2025 -0300
+
+    Aula 81: Enum pt2 - Construtores e atributos
+
+[33mcommit e69f7db384e97ec62b287219a6a4709e08a42310[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Mon Apr 21 18:34:21 2025 -0300
+
+    Update README.md
+    
+    refactor: corrigindo o texto
+
+[33mcommit 20e22358c2f841b446944b2d3e401a20d8b35888[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 18:30:19 2025 -0300
+
+    Aula 80: fazendo testes com enums - adicionando descrições às variáveis de tipo enum, criando construtor e um get; utilizando a estrutura condicional switch case para testar o valor das variáveis de tipo enum
+
+[33mcommit eb577f79c9916d19279e7fde8732b79b36f5c09e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 18:25:48 2025 -0300
+
+    docs(enums): Adicionado um README.md introduzindo enums
+
+[33mcommit 6843aabd75f63a86836c9bf49200a51dd6e22a4b[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 21 17:28:56 2025 -0300
+
+    Aula 80: Enum
+
+[33mcommit fbe3b0e2a1eaefe148bd584c642185af2000aaf2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 20 22:20:31 2025 -0300
+
+    Aula 80: Enum
+
+[33mcommit a6a651e1257e5e266291e80f3e54a207f2436979[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 20 13:20:30 2025 -0300
+
+    Aula 79: Modificador de acesso final - Classes e métodos
+
+[33mcommit 8c7ccea73ed696a498ca70a041cb978da46d21f8[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 20 02:24:17 2025 -0300
+
+    Aula 77: Modificador final pt01 - tipo primitivo
+
+[33mcommit f80ceeb4979cdbd737bad3978393fc7aeba5f1d2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 22:37:15 2025 -0300
+
+    Aula 65: Um para muitos
+
+[33mcommit 16a9985dfeb2573164fc0a036b820284c8427044[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 22:07:19 2025 -0300
+
+    Aula 66: Associação pt 03 - Associação unidirecional muitos para um
+
+[33mcommit c82e591caa3cd3bedb7e450b5bba3b596a1e2631[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 21:38:15 2025 -0300
+
+    Aula 66: Associação pt 03 - Associação unidirecional muitos para um
+
+[33mcommit 4e82e361601127bbb3703414f86e7649d93637f9[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 20:42:31 2025 -0300
+
+    Aula 76: Sobrescrita do método toString
+
+[33mcommit 9c619d3d490711999217c9d1c526944e21ccbe27[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 20:32:28 2025 -0300
+
+    Aula 75: Sequência de inicialização
+
+[33mcommit 765c0f193912e2f8d5fc029e0af902f7aed7c83e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 19:42:46 2025 -0300
+
+    Aula 74: Construtores
+
+[33mcommit 9c3b6a1b500b60d67bf0592f7da4f08b0ce81b8e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 15:21:58 2025 -0300
+
+    Aula 73: Modificador de acesso protected
+
+[33mcommit 40ee1ee82543669e6836207dcc2ea4a7d8d1f2f2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 19 13:54:30 2025 -0300
+
+    Aula 71: Herança
+
+[33mcommit ba22457410398cee24034cb485d405f0aadbd474[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 17 22:57:33 2025 -0300
+
+    Aula 70: exercício associação
+
+[33mcommit ee1c6fb0f7e5200b43b38b5c29730c0acd203342[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 17 12:30:03 2025 -0300
+
+    Aula 66: Assocacão unidirecional muitos para um
+
+[33mcommit 3a832947189febdb1ebdc61ad8aa5e24e0c5049f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 17 12:12:43 2025 -0300
+
+    Aula 64: Associacão - Arrays com Objetos e Aula 65: Associacão unidirecional um-para-muitos
+
+[33mcommit d2b329d691adca58d7a20a33e93dffac95c9f867[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 16 18:55:21 2025 -0300
+
+    Aula 61 - Modificador static
+
+[33mcommit ad61462b4549a9f40a739ad9deba9f4398bee061[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 16 15:30:12 2025 -0300
+
+    Aula 63 - Bloco de inicialização static
+
+[33mcommit 1670b2a65fc7ecf6e7be7f5f95559a32dacdf59f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 16 15:15:44 2025 -0300
+
+    Aula 62 - Métodos estáticos
+
+[33mcommit 66916141e470510e053c10ed76981174f2108d52[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Apr 16 13:23:51 2025 -0300
+
+    Aula 61 - Modificador de acesso static nos atributos
+
+[33mcommit 0065c206d010383585ffbef0aa1344f35667a4da[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 14 00:59:10 2025 -0300
+
+    Aula 60: Blocos de inicialização de instância
+
+[33mcommit b7d77fe02609bf218c3d31b53b77df5c60b73125[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 13 21:28:46 2025 -0300
+
+    Construtores: Sobrecarga e this(). README adicionado.
+
+[33mcommit ee31f2c87460ecbb9a55a04d501ae5a78e14d434[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 13 20:29:49 2025 -0300
+
+    Aulas 58 e 59: Construtores - sobrecarga e this()
+
+[33mcommit 797f60e24e464b8619b1c4b1ef83bf7e18f57dd2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 12 16:45:43 2025 -0300
+
+    Sobrecarga de métodos
+
+[33mcommit 01edeb828f48587e26abd56b4e7d0d010588bc87[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 10 13:05:30 2025 -0300
+
+    README adicionado
+
+[33mcommit ae1845a8e3844b2ba6593f525aa68b0247eea318[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 10 12:40:15 2025 -0300
+
+    Aula 57 - Sobrecarga de métodos
+
+[33mcommit 3be5e99192c7d0be9e12fa0a19b6c0d70c73ad6f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Apr 10 12:39:14 2025 -0300
+
+    Refatorando os nomes dos pacotes
+
+[33mcommit e5af28fb83625f05f82f6e6c61eb5deb2c357e2b[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 11:46:21 2025 -0300
+
+    First look at the private access modifier and the use of getter and setter
+
+[33mcommit 23df5a09c35410e50a263bdb41fedb7e8d1089c0[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 02:30:41 2025 -0300
+
+    Exercise solved
+
+[33mcommit 86af8411b24b577699f3b904ce72942095d4f842[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 01:17:03 2025 -0300
+
+    Testing vararg as a parameter
+
+[33mcommit 9bcb4fdb062abfaa38b0cf7cfcc3526a43a80c0c[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 01:15:59 2025 -0300
+
+    Vararg explanation added
+
+[33mcommit f7d8a051ee34f21bfb1a881ca37ce3b1ee41589e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 01:15:51 2025 -0300
+
+    Vararg explanation added
+
+[33mcommit e1cfb877ef6c7a29901eea6e3a1a1ce399772727[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 01:15:23 2025 -0300
+
+    Added a Vararg method
+
+[33mcommit edcfd3e0ed036a74a4ce7f356344829e96c3b777[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 00:38:49 2025 -0300
+
+    Reference this
+
+[33mcommit db2a32c749c1138aa7b900d1da6711f2a3bc1fc3[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Apr 7 00:03:36 2025 -0300
+
+    Overview Reference Type parameters
+
+[33mcommit 5c9d784113182305e998d9abff2b34eab11c46e8[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Apr 6 12:54:03 2025 -0300
+
+    refactored by packages
+
+[33mcommit 8aef9dcc0a2a548490627defff220961cfc29b68[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 12:55:58 2025 -0300
+
+    Primitive type parameters: how its works
+
+[33mcommit b386a4f36e7729a30bdbfd1b640ca0bcb3d2bf94[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 11:23:21 2025 -0300
+
+    Uso do return em métodos void
+
+[33mcommit b7640fda71849d2567bf862760ed2874b1cf5e2d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 11:13:47 2025 -0300
+
+    refactored
+
+[33mcommit f6857ea21835c8370799c363e5fb14609de7c949[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 11:01:17 2025 -0300
+
+    Métodos: parâmetros e argumentos
+
+[33mcommit 67c2f735956d878702e399550ee01f4b126c858e[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 10:59:07 2025 -0300
+
+    Métodos: return
+
+[33mcommit 4e220d14a588b21f0293f322576605344058cd36[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 10:35:19 2025 -0300
+
+    refactored
+
+[33mcommit 68be2564be87c108e7b57d74f07ee54d6c6ea95d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Apr 5 10:30:46 2025 -0300
+
+    Métodos: parâmetros e argumentos
+
+[33mcommit 4f1813467856594e1ab678b50fffc7363b28292d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Mar 26 01:14:44 2025 -0300
+
+    OOP Introduction to methods: Parameters
+
+[33mcommit ad1eca83a7a954c125af54c19eef18f6804bf454[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Mar 26 00:58:08 2025 -0300
+
+    OOP Introduction to methods
+
+[33mcommit 284e4262e15da137b13763d6d9cd2e6cc8d52a37[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Mar 26 00:34:09 2025 -0300
+
+    OOP creating an object
+
+[33mcommit b48f30b0388872717e43e25e2797138c6b174a20[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Mar 26 00:33:27 2025 -0300
+
+    OOP exercise: creating two distincts objects of the same class Car
+
+[33mcommit 596045e7ab6e4710676e63a89e0c4d02ac1703f8[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Wed Mar 26 00:32:37 2025 -0300
+
+    OOP exercise: creating two distincts objects of the same class Car
+
+[33mcommit d6dd1f1028c30635683915bc782583d3455e837d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Mar 25 23:50:16 2025 -0300
+
+    Multidimentional arrays overview
+
+[33mcommit f5b11ae95396bc10a80236ef2fcf315cd3557248[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Mar 25 23:34:58 2025 -0300
+
+    OOP: Introduction classes
+
+[33mcommit a7faf115915cf4457ba002009c53c8c321f10327[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sat Mar 22 12:28:38 2025 -0300
+
+    Array quick challenge: Given an array, print only the diagonal elements using foreach
+
+[33mcommit 5e0b9f2a1e29091fb0df96ad5d05b56870211783[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 13:12:35 2025 -0300
+
+    Array quick challenge: Given an array, print only the diagonal elements using foreach
+
+[33mcommit b39e36f074c5ed12e77c43ec0b5fc85fe431a163[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 13:02:03 2025 -0300
+
+    Array quick challenge: Given an array, print only the diagonal elements using foreach
+
+[33mcommit 9c06a424a9091fdd7ac2f164560daef5e79bb0ab[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 13:00:57 2025 -0300
+
+    Overview arrays
+
+[33mcommit f81ed93e8ffcafcba38ab58fa248431cc90db8c2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 10:34:06 2025 -0300
+
+    Teste caixa eletronico
+
+[33mcommit 4b1e3eb7847b090625bb752e18da1cf3eb5c80c3[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 10:31:26 2025 -0300
+
+    Arrays overview
+
+[33mcommit 4a39d51a95a312ac78440e829567b6f7cce2c328[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 21 10:26:45 2025 -0300
+
+    Arrays overview
+
+[33mcommit ee151e4d17069bbae2d6868ea9784b22049584ca[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Mar 18 12:46:05 2025 -0300
+
+    Arrays overview
+
+[33mcommit a812e9a9838a7c94181ac5c30932c7c7fc59b010[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Mar 18 12:45:51 2025 -0300
+
+    Break exercise
+
+[33mcommit a32c6a4280383a09ec0e056b91621b54374e4de9[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Tue Mar 18 12:45:37 2025 -0300
+
+    Break overview
+
+[33mcommit 52c087b04eb48c93241baf7ba323dd79a0bea47c[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Mar 16 19:45:10 2025 -0300
+
+    Loops
+
+[33mcommit a7aecd1b8336445ef31cd2a2d86892b13038f25f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Mar 16 19:19:34 2025 -0300
+
+    Conditional Structures
+
+[33mcommit caebdd835e983e453d4afa41e763bcfe92f3291d[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Mar 16 19:16:30 2025 -0300
+
+    Operators
+
+[33mcommit 2173f2ccac589e3c29bf503bb9ec41073229e99c[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Sun Mar 16 19:16:06 2025 -0300
+
+    Primitive types
+
+[33mcommit 59354a05e894797bdace314288c55400788db095[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Mon Mar 10 03:04:33 2025 -0300
+
+    Packages organized by topic
+
+[33mcommit ac8335db81dd64f96459d022878b5d5c874801a0[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sun Mar 9 13:01:16 2025 -0300
+
+    Update README.md
+
+[33mcommit 4bf0eebdeca6c77deab7d5cb3a817e32179bf5b3[m
+Author: Daniel Ribeiro <danribeiro001@gmail.com>
+Date:   Sun Mar 9 12:59:32 2025 -0300
+
+    Create README.md
+
+[33mcommit 9039eff7bdbe1d327713afd0b2ff5196fe45a056[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 16:39:53 2025 -0300
+
+    Added reminder (%) and Logical operators (AND(&&), OR(||) and NOT(!))
+
+[33mcommit a7e4d220cd457657cd586c0c9c7c4e6fbb6e91d2[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 15:44:28 2025 -0300
+
+    Hellow world dojo
+
+[33mcommit 3509d198624b0e4cc0945b59b9d16a8831352ae0[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 02:48:06 2025 -0300
+
+    Hellow world dojo
+
+[33mcommit fa9a2cf369d321a9d1aebdf1d114165d76463d4f[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 02:44:44 2025 -0300
+
+    Operators
+
+[33mcommit 399171ec9a5c0f98abeb1906bc599ebd7027cd40[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 02:39:14 2025 -0300
+
+    Primitive Types Exercise
+
+[33mcommit 3fdde93740fd7c81e1a1bb93751b2a57b7a94b75[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Fri Mar 7 02:38:55 2025 -0300
+
+    Primitive Types
+
+[33mcommit dda921571dbbdd622e5e198d9e5cd01ffeea4c31[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Mar 6 02:53:07 2025 -0300
+
+    dev dojo
+
+[33mcommit 61b70d8a7521af5d1ce2134d16e0168b9d507a01[m
+Author: DANR1BEIRO <danribeiro001@gmail.com>
+Date:   Thu Mar 6 02:52:14 2025 -0300
+
+    Primitive types
