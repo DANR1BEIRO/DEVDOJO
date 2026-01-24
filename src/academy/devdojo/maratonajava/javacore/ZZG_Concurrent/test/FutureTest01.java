@@ -32,4 +32,3 @@ public class FutureTest01 {
         return sum;
     }
 }
-wq
