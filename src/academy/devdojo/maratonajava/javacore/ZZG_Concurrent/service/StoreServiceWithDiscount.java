@@ -19,9 +19,8 @@ public class StoreServiceWithDiscount {
 
     /**
      * To apply a discount we need a quote
-     *
      * @param quote
-     * @return
+     * @return returns the pattern storeName, discount applied and final price
      */
     public String applyDiscount(Quote quote) {
         delay(); // simulating an API
