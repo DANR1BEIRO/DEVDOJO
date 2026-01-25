@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain;
 
 public class Calzone extends Pizza {
     private final boolean sauceInside;

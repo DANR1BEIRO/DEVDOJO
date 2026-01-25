@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.test;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.test;
 
 import academy.devdojo.maratonajava.javacore.K_Enum.domain.RobotControl.RobotType;
 import academy.devdojo.maratonajava.javacore.K_Enum.domain.RobotState;
-import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain.Robot;
-import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.enums.RobotEnergySource;
+import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain.Robot;
+import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.enums.RobotEnergySource;
 
 public class RobotBuilderTest {
     static void main() {

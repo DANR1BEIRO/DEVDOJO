@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.test;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.test;
 
-import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain.Hamburger;
+import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain.Hamburger;
 
 public class HamburgerBuilderTest {
     static void main() {

@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.test;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.test;
 
-import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain.NutritionFacts;
+import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain.NutritionFacts;
 
 public class NutritionFactsTest {
     static void main() {

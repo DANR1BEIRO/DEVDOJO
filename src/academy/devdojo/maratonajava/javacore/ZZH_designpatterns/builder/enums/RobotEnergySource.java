@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.enums;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.enums;
 
 public enum RobotEnergySource {
     ELETRIC("Eletric Robot"),

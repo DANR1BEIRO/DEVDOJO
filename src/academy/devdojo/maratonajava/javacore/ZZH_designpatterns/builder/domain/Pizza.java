@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain;
 
 import java.util.EnumSet;
 import java.util.Objects;

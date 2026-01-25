@@ -1,8 +1,8 @@
-package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.domain;
+package academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.domain;
 
 import academy.devdojo.maratonajava.javacore.K_Enum.domain.RobotControl.RobotType;
 import academy.devdojo.maratonajava.javacore.K_Enum.domain.RobotState;
-import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.enums.RobotEnergySource;
+import academy.devdojo.maratonajava.javacore.ZZH_designpatterns.builder.enums.RobotEnergySource;
 
 public class Robot {
     private final long id;
