@@ -7,8 +7,7 @@ public class BuilderPatternTest01 {
         /**
          * Builder Pattern is used when we have several attributes to be initialize
          */
-        Person person = Person.Builder
-                .builder()
+        Person person = Person.Builder.builder()
                 .firstName("Goku")
                 .lastName("son")
                 .username("ssjgod")
