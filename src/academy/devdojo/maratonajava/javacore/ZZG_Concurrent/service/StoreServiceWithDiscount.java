@@ -19,6 +19,7 @@ public class StoreServiceWithDiscount {
 
     /**
      * To apply a discount we need a quote
+     *
      * @param quote
      * @return returns the pattern storeName, discount applied and final price
      */
@@ -38,8 +39,9 @@ public class StoreServiceWithDiscount {
     }
 
     private void delay() {
+        int milliseconds = ThreadLocalRandom.current().nextInt(250, 2500);
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(milliseconds);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
