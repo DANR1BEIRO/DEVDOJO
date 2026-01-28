@@ -1,6 +1,24 @@
 package academy.devdojo.maratonajava.javacore.ZZI_JDBC.conn;
 
-public class ConnectionFactory {
-    // java.sql = connection, statement, ResultSet, DiverManager
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
+// java.sql = connection, statement, ResultSet, DiverManager
+public class ConnectionFactory {
+
+    // para montar uma conexão, precisamos desses dados:
+    public static Connection getConnection() {
+        String url = "jdbc:mysql://localhost:3306/anime_store"; // possibilita o DriverManager pegar uma conexão, porque todo db segue um padrao
+        String username = "root";
+        String password = "root";
+
+        try {
+            Connection connection = DriverManager.getConnection(url, username, password);
+            System.out.println(connection);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
