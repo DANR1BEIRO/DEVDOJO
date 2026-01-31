@@ -140,12 +140,49 @@ public class ProducerRepository {
                 }
             }
 
+        } catch (SQLException e) {
+            log.error("Error while trying to find producers by name", e);
+        }
+    }
+
+    public static void displayTypeScrollWorking() {
+        String sql = "SELECT * FROM anime_store.producer;";
+        try (Connection conn = ConnectionFactory.getConnection();
+             Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+             ResultSet rs = stmt.executeQuery(sql)) {
+
+            log.info("last row: '{}'", rs.last());
+            log.info("row number: '{}'", rs.getRow());
+            log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());
+
+            log.info("first row: '{}'", rs.first());
+            log.info("row number: '{}'", rs.getRow());
+            log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());
+
+            log.info("row absolute: '{}'", rs.absolute(2));
+            log.info("row number: '{}'", rs.getRow());
+            log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());
+
+            log.info("row relative: '{}'", rs.relative(-1));
+            log.info("row number: '{}'", rs.getRow());
+            log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());
+
+            log.info("is last: '{}'", rs.isLast());
+            log.info("row number: '{}'", rs.getRow());
+
+            log.info("is last: '{}'", rs.isFirst());
+            log.info("row number: '{}'", rs.getRow());
+
+            log.info("-----------------");
+            rs.afterLast();
+            log.info("is after last: '{}'", rs.isAfterLast());
+            while (rs.previous()) {
+                log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());x
+            }
+
 
         } catch (SQLException e) {
             log.error("Error while trying to find producers by name", e);
         }
     }
 }
-
-
-//SELECT * FROM anime_store.producer where name like '%%';

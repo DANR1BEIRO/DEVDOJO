@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="56a69638-e5b3-4db5-8f42-6d311317f783" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +79,10 @@
     </key>
     <key name="CreateBuilderDialog.RecentsKey">
       <recent name="academy.devdojo.maratonajava.javacore.ZZI_JDBC.domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="academy.devdojo.maratonajava.javacore.ZZJ_CRUD.domain" />
+      <recent name="academy.devdojo.maratonajava.javacore.ZZI_JDBC.conn" />
     </key>
   </component>
   <component name="RunManager">
