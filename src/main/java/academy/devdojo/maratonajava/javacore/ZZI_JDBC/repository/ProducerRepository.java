@@ -4,10 +4,7 @@ import academy.devdojo.maratonajava.javacore.ZZI_JDBC.conn.ConnectionFactory;
 import academy.devdojo.maratonajava.javacore.ZZI_JDBC.domain.Producer;
 import lombok.extern.log4j.Log4j2;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,6 +90,30 @@ public class ProducerRepository {
             log.error("Error while trying to find producers by name", e);
         }
         return producers;
+    }
+
+    public static void displayProducerMetaData() {
+        log.info("Displaying producer meta data:");
+        String sql = "SELECT * FROM anime_store.producer";
+
+        try (Connection conn = ConnectionFactory.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            ResultSetMetaData metaData = rs.getMetaData();
+            rs.next();
+            int columnCount = metaData.getColumnCount();
+            log.info("Column count: '{}'", columnCount);
+
+            for (int i = 1; i <= columnCount; i++) {
+                log.info("Table name: '{}'", metaData.getTableName(i));
+                log.info("Column name: '{}'", metaData.getColumnName(i));
+                log.info("Column size: '{}'", metaData.getColumnDisplaySize(i));
+                log.info("Column type: '{}'", metaData.getColumnTypeName(i));
+            }
+
+        } catch (SQLException e) {
+            log.error("Error while trying to find producers by name", e);
+        }
     }
 }
 

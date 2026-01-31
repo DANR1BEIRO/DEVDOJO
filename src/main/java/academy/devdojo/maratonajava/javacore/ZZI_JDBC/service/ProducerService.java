@@ -29,6 +29,10 @@ public class ProducerService {
         return ProducerRepository.findByname(name);
     }
 
+    public static void displayProducerMetaData(){
+        ProducerRepository.displayProducerMetaData();
+    }
+
     private static void requireValidId(Integer id) {
         if (id == null || id <= 0) {
             throw new IllegalArgumentException("Invalid value for ID");
