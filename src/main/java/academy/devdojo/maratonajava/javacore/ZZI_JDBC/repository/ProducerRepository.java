@@ -177,9 +177,8 @@ public class ProducerRepository {
             rs.afterLast();
             log.info("is after last: '{}'", rs.isAfterLast());
             while (rs.previous()) {
-                log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());x
+                log.info(Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build());
             }
-
 
         } catch (SQLException e) {
             log.error("Error while trying to find producers by name", e);
