@@ -257,6 +257,36 @@ public class ProducerRepository {
         }
     }
 
+    public static List<Producer> findBynamePreparedStatement(String name) {
+        log.info("Finding producers by name");
+        String sql = "SELECT * FROM anime_store.producer where name like ?;";
+        List<Producer> producers = new ArrayList<>();
+
+        try (
+                Connection conn = ConnectionFactory.getConnection();
+                PreparedStatement ps = createdPrepareStatement(conn, sql, name);
+                ResultSet rs = ps.executeQuery()) {
+
+            while (rs.next()) {
+                Producer producer = Producer.builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
+                producers.add(producer);
+            }
+
+        } catch (SQLException e) {
+            log.error("Error while trying to find producers by name", e);
+        }
+        return producers;
+    }
+
+    private static PreparedStatement createdPrepareStatement(Connection conn, String sql, String name) throws SQLException {
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setString(1, String.format("%%%s%%", name));
+        return ps;
+    }
+
     private static void insertNewProducer(String name, ResultSet rs) throws SQLException {
         rs.moveToInsertRow(); // move o cursor para uma row temporaria
         rs.updateString("name", name);

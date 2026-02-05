@@ -9,6 +9,7 @@ import java.util.List;
 @Log4j2
 public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
+
         Producer producer = Producer.builder().name("Studio Deen").build();
         Producer producerToUpdate = Producer.builder().id(1).name("MADHOUSE").build();
 
@@ -23,6 +24,9 @@ public class ConnectionFactoryTest01 {
         //ProducerService.displayTypeScrollWorking();
         //List<Producer> producers = ProducerService.findByNameAndUpdateToUpperCase("Deen");
         //List<Producer> producers = ProducerService.findByNameAndInsertWhenNotFound("A-1 Pictures");
-        ProducerService.findByNameAndDelete("A-1 Pictures");
+        //ProducerService.findByNameAndDelete("A-1 Pictures");
+        List<Producer> producers = ProducerService.findBynamePreparedStatement("o");
+        log.info("Producers found '{}'", producers);
+
     }
 }
