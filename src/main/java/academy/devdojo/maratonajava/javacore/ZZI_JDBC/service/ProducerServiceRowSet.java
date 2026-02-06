@@ -8,6 +8,11 @@ import java.util.List;
 public class ProducerServiceRowSet {
 
     public static List<Producer> findByNameJbcsRowSet(String name) {
-        return ProducerRepositoryRowSet.findByNameJbcsRowSet(name);
+        return ProducerRepositoryRowSet.findByNameJbcRowSet(name);
     }
+
+    public static void updateJbcRowSet(Producer producer) {
+        ProducerRepositoryRowSet.updateJbcRowSet(producer);
+    }
+
 }
