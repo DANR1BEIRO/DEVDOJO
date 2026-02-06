@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a69638-e5b3-4db5-8f42-6d311317f783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/listener/CustomRowSetListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepositoryRowSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepositoryRowSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerServiceRowSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerServiceRowSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepositoryRowSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepositoryRowSet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerServiceRowSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerServiceRowSet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/conn/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest01.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,5 +139,16 @@
       <updated>1769524256461</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jrt:///usr/lib/jvm/java-1.21.0-openjdk-amd64!/java.sql.rowset/com/sun/rowset/CachedRowSetImpl.class</url>
+          <line>388</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
