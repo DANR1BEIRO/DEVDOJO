@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a69638-e5b3-4db5-8f42-6d311317f783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/test/ConnectionFactoryTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/conn/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/domain/Anime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/domain/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/test/CrudTest01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/repository/ProducerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZI_JDBC/service/ProducerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,7 @@
     "Application.ConnectionFactoryTest01.executor": "Run",
     "Application.ConnectionFactoryTest02.executor": "Run",
     "Application.ConnectionFactoryTest03.executor": "Run",
+    "Application.CrudTest01.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -80,10 +82,11 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="academy.devdojo.maratonajava.javacore.ZZJ_CRUD.domain" />
+      <recent name="academy.devdojo.maratonajava.javacore.ZZJ_CRUD.conn" />
       <recent name="academy.devdojo.maratonajava.javacore.ZZI_JDBC.conn" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConnectionFactoryTest03">
+  <component name="RunManager" selected="Application.CrudTest01">
     <configuration name="ConnectionFactoryTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.ZZI_JDBC.test.ConnectionFactoryTest01" />
       <module name="maratona-java" />
@@ -123,8 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrudTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.ZZJ_CRUD.test.CrudTest01" />
+      <module name="maratona-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.ZZJ_CRUD.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CrudTest01" />
         <item itemvalue="Application.ConnectionFactoryTest03" />
         <item itemvalue="Application.ConnectionFactoryTest02" />
         <item itemvalue="Application.ConnectionFactoryTest01" />
@@ -155,6 +172,11 @@
           <url>jrt:///usr/lib/jvm/java-1.21.0-openjdk-amd64!/java.sql.rowset/com/sun/rowset/CachedRowSetImpl.class</url>
           <line>388</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
