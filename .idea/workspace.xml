@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/test/CrudTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/test/CrudTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/service/ProducerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/test/CrudTest01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/test/CrudTest01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +175,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZJ_CRUD/repository/ProducerRepository.java</url>
-          <line>20</line>
+          <line>17</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
