@@ -15,7 +15,6 @@ public class ProducerService {
             case 2 -> delete();
             case 3 -> save();
             case 4 -> update();
-            default -> throw new IllegalArgumentException("Not a valid option");
         }
     }
 
@@ -56,7 +55,10 @@ public class ProducerService {
         String name = SCANNER.nextLine();
         name = name.isEmpty() ? producerFromDb.getName() : name;
 
-        Producer producerToUpdate = Producer.builder().id(producerFromDb.getId()).name(name).build();
+        Producer producerToUpdate = Producer.builder()
+                .id(producerFromDb.getId())
+                .name(name)
+                .build();
 
         ProducerRepository.update(producerToUpdate);
     }
