@@ -1,0 +1,15 @@
+package academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+class DeveloperTest {
+
+    @Test
+    public void instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType() {
+        Employee employeeDeveloper = new Developer("1", "Java");
+        if (employeeDeveloper instanceof Developer developer) {
+            Assertions.assertEquals("Java", developer.getMainLanguage());
+        }
+    }
+}

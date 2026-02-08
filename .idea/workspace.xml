@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56a69638-e5b3-4db5-8f42-6d311317f783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain/Manga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain/MangaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain/DeveloperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/Y_Collections/domain/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/devdojo/maratonajava/javacore/Y_Collections/domain/Manga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZK_JUnit/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/academy/devdojo/maratonajava/javacore/ZZK_JUnit/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/BinarySearchTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/IteratorTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/ListSortTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/ListSortTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/MangaByIdComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/MangaPrecoComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/MangaSortTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/MapTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/MapTest03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/NavigableSetTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/NavigableSetTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/Pessoa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/SetTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/Y_Collections/test/SmartPhoneCompareToSerial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZK_JUnit/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/academy/devdojo/maratonajava/javacore/ZZK_JUnit/service/PersonService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -67,41 +51,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ConnectionFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConnectionFactoryTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConnectionFactoryTest02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConnectionFactoryTest03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CrudAnime.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CrudTest01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.accessors_ReturnData_WhenInitialized.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.constructor_throwNullPointerException_WhenNameIsNull.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.equals_ReturnTrue_WhenObjectsAreTheSame.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.hashCode_ReturnTrue_WhenObjectsAreTheSame.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MangaTest.isRecord_ReturnTrue_WhenCalledFromManga.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.filterRemovingNotAdult_returnListWithAdultOnly_WhenListOfPersonWithAdultIsPassed.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.isAdult_ReturnFalse_WhenAgeIsLowerThan18.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.isAdult_ReturnTrue_WhenAgeIsGreaterOrEqualThan18.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.isAdult_shouldThrowNullPointerException_ifPersonIsNull.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/danielribeiro/JAVA/DEVDOJO/src/test/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/danielribeiro/JAVA/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConnectionFactoryTest.executor": "Run",
+    "Application.ConnectionFactoryTest01.executor": "Run",
+    "Application.ConnectionFactoryTest02.executor": "Run",
+    "Application.ConnectionFactoryTest03.executor": "Run",
+    "Application.CrudAnime.executor": "Run",
+    "Application.CrudTest01.executor": "Run",
+    "JUnit.DeveloperTest.instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType.executor": "Run",
+    "JUnit.MangaTest.accessors_ReturnData_WhenInitialized.executor": "Run",
+    "JUnit.MangaTest.constructor_throwNullPointerException_WhenNameIsNull.executor": "Run",
+    "JUnit.MangaTest.equals_ReturnTrue_WhenObjectsAreTheSame.executor": "Run",
+    "JUnit.MangaTest.executor": "Run",
+    "JUnit.MangaTest.hashCode_ReturnTrue_WhenObjectsAreTheSame.executor": "Run",
+    "JUnit.MangaTest.isRecord_ReturnTrue_WhenCalledFromManga.executor": "Run",
+    "JUnit.PersonServiceTest.executor": "Run",
+    "JUnit.PersonServiceTest.filterRemovingNotAdult_returnListWithAdultOnly_WhenListOfPersonWithAdultIsPassed.executor": "Run",
+    "JUnit.PersonServiceTest.isAdult_ReturnFalse_WhenAgeIsLowerThan18.executor": "Run",
+    "JUnit.PersonServiceTest.isAdult_ReturnTrue_WhenAgeIsGreaterOrEqualThan18.executor": "Run",
+    "JUnit.PersonServiceTest.isAdult_shouldThrowNullPointerException_ifPersonIsNull.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/danielribeiro/JAVA/DEVDOJO/src/test/java/academy/devdojo/maratonajava/javacore/ZZK_JUnit/domain",
+    "last_opened_file_path": "/home/danielribeiro/JAVA/DSA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -125,7 +110,23 @@
       <recent name="academy.devdojo.maratonajava.javacore.ZZI_JDBC.conn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MangaTest.constructor_throwNullPointerException_WhenNameIsNull">
+  <component name="RunManager" selected="JUnit.DeveloperTest.instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType">
+    <configuration name="DeveloperTest.instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maratona-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain" />
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain.DeveloperTest" />
+      <option name="METHOD_NAME" value="instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MangaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maratona-java" />
       <extension name="coverage">
@@ -152,22 +153,6 @@
       <option name="PACKAGE_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain" />
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain.MangaTest" />
       <option name="METHOD_NAME" value="constructor_throwNullPointerException_WhenNameIsNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MangaTest.equals_ReturnTrue_WhenObjectsAreTheSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maratona-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.ZZK_JUnit.domain.MangaTest" />
-      <option name="METHOD_NAME" value="equals_ReturnTrue_WhenObjectsAreTheSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeveloperTest.instanceOf_ExecutesChildClassMethod_WhenObjectIsOfChildType" />
         <item itemvalue="JUnit.MangaTest.constructor_throwNullPointerException_WhenNameIsNull" />
         <item itemvalue="JUnit.MangaTest.isRecord_ReturnTrue_WhenCalledFromManga" />
         <item itemvalue="JUnit.MangaTest" />
         <item itemvalue="JUnit.MangaTest.hashCode_ReturnTrue_WhenObjectsAreTheSame" />
-        <item itemvalue="JUnit.MangaTest.equals_ReturnTrue_WhenObjectsAreTheSame" />
       </list>
     </recent_temporary>
   </component>
