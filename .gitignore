@@ -1,0 +1,16 @@
+# Compilação e Build (Maven)
+target/
+
+# Configurações da IDE (IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Arquivos de log e temporários
+*.log
+tmp/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
