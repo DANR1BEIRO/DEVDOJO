@@ -26,9 +26,9 @@ public class Manga implements Comparable<Manga> {
      * compara o Objeto atual (this) com o objeto passado como argumento.
      *
      * @param manga
-     * @return -1 se o this for menor do que manga.
+     * @return -1 se o this for menor do que Manga.
      * @return 0 se os objetos comparados forem iguais.
-     * @return 1 se o this for maior do que manga.
+     * @return 1 se o this for maior do que Manga.
      * As classes Wrappers e String já implementam o metodo compareTo.
      * Se o campo a ser comparado for de um tipo primitivo, deve-se chamar
      * o metodo compare da classe wrapper desse campo primitivo.
@@ -36,11 +36,11 @@ public class Manga implements Comparable<Manga> {
     @Override
     public int compareTo(Manga manga) {
         // compara por id
-        //return this.id.compareTo(manga.getId());
+        //return this.id.compareTo(Manga.getId());
 
         // metodo compare da classe wrapper Double para comparar
         // o campo de tipo primitivo double dos objetos
-        // return Double.compare(valor, manga.getValor());
+        // return Double.compare(valor, Manga.getValor());
 
         return this.name.compareTo(manga.getName());
     }
