@@ -10,18 +10,18 @@ public class JoKenPo {
 
     private enum Status {WON, LOSES, DRAW}
 
-    public static void main(String[] args) throws InterruptedException {
-        go();
-    }
-
-    private static void go() throws InterruptedException {
+    public static void go() {
         Status result;
         do {
             menu();
             int userOption = Integer.parseInt(SCANNER.nextLine());
             if (userOption == 0) {
                 System.out.println("Exiting...");
-                TimeUnit.SECONDS.sleep(1);
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 break;
             }
 
@@ -47,6 +47,7 @@ public class JoKenPo {
         System.out.println("3. Scissors");
         System.out.println("0. exit");
     }
+
     private static Status checkWhoWon(int user, int computer) {
         if (user == computer) {
             return Status.DRAW;
