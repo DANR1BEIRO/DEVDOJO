@@ -6,6 +6,7 @@ public class Scope {
     public static void main(String[] args) {
         useLocalVariable();
         useFieldVariable();
+
     }
 
     static void useLocalVariable() {
