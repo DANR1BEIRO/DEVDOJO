@@ -9,7 +9,7 @@ class ThreadExample extends Thread {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()); // thread main: Chamada assim porque é a que incia o programa
+        System.out.println(Thread.currentThread().getName()); // thread RobotSystemSetup: Chamada assim porque é a que incia o programa
         for (int i = 0; i < 500; i++) {
             System.out.print(c);
             if (i % 100 == 0) {
@@ -28,7 +28,7 @@ class ThreadExampleRunnable implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()); // thread main: Chamada assim porque é a que incia o programa
+        System.out.println(Thread.currentThread().getName()); // thread RobotSystemSetup: Chamada assim porque é a que incia o programa
         for (int i = 0; i < 500; i++) {
             System.out.print(c);
             if (i % 100 == 0) {

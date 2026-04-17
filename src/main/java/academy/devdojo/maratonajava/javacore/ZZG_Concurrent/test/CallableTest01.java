@@ -21,7 +21,7 @@ public class CallableTest01 {
         ExecutorService executor = Executors.newFixedThreadPool(2);
         Future<String> future = executor.submit(callableRandomNumber);
 
-        // get faz a main esperar até que a execucao do callable termine, então continua
+        // get faz a RobotSystemSetup esperar até que a execucao do callable termine, então continua
         String s = future.get();
         System.out.printf("program finished %s", s);
         executor.shutdown();
