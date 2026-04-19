@@ -11,7 +11,7 @@ public class Class01Operators {
         int division = number1 / number2;
 
         System.out.println("Sum: " + (number2 + number1) +
-                           "\nProduct: " + product +
+                           "\nGameProduct: " + product +
                            "\nSubtraction: " + subtraction +
                            "\nDivision: " + division);
 

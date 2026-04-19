@@ -9,7 +9,7 @@ public class ProductTaxReport {
     public static void generateProductTaxReport(Product product) {
         System.out.println("Starting the report for product");
         double taxValue = product.calculateTaxValue();
-        System.out.println("Product: " + product.getName());
+        System.out.println("GameProduct: " + product.getName());
         System.out.println("Price: " + product.getPrice());
         System.out.println("Taxes: " + taxValue);
         if (product instanceof Tomato) {

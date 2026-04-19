@@ -14,7 +14,7 @@ public class Costumer {
 
     @Override
     public String toString() {
-        return "Costumer{" +
+        return "Customer{" +
                 "name='" + name + '\'' +
                 ", costumerType=" + costumerType +
                 ", costumerTypeInt=" + costumerType.KEY +

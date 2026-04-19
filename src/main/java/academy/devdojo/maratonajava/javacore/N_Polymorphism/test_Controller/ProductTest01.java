@@ -16,7 +16,7 @@ public class ProductTest01 {
         ProductTaxReport.generateProductTaxReport(tomato);
 
         /**
-         * A list of Product references, each pointing to a different kind of product
+         * A list of GameProduct references, each pointing to a different kind of product
          */
         Product[] products = {
                 new Computer("Brainiac", 1000),

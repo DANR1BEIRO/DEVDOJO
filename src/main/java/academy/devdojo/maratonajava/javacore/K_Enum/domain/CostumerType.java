@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.K_Enum.domain;
 
 public enum CostumerType {
-    INDIVIDUAL(1, "Costumer: Individual"),
-    COMPANY(2, "Costumer: Company");
+    INDIVIDUAL(1, "Customer: Individual"),
+    COMPANY(2, "Customer: Company");
 
     public final int KEY;
     public final String VALUE;

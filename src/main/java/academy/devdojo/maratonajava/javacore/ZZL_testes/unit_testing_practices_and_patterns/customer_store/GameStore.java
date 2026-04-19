@@ -1,0 +1,31 @@
+package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class GameStore implements Store<GameProduct> {
+
+    private Map<GameProduct, Integer> inventory = new HashMap<>();
+
+    @Override
+    public void addInventory(GameProduct product, int amount) {
+        inventory.put(product, inventory.getOrDefault(product, 0) + amount);
+    }
+
+    @Override
+    public int getInventory(GameProduct product) {
+        return inventory.get(product);
+    }
+
+    @Override
+    public boolean hasEnoughInventory(GameProduct product, int amount) {
+        return false;
+    }
+
+    @Override
+    public void removeInventory(GameProduct product, int amount) {
+        if (hasEnoughInventory(product, amount)) {
+            inventory.remove(product, amount);
+        }
+    }
+}
