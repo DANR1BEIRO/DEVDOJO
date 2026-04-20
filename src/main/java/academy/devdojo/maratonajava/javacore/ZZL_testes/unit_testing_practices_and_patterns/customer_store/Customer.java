@@ -14,6 +14,11 @@ public class Customer {
     public boolean purchase(GameProduct product, int quantity) {
         log.info("Trying to purchase {} units of {}", quantity, product);
 
+        if (quantity <= 0) {
+            log.error("Purchase fail! Invalid quantity: {}", quantity);
+            return false;
+        }
+
         if (!store.hasEnoughInventory(product, quantity)) {
             log.error("Purchase fail! There isn't enough amount of {} in stock.", product);
             return false;
