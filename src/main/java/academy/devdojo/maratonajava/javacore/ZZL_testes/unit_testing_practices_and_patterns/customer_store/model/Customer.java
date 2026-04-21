@@ -1,5 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store;
+package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.model;
 
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.store.Store;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -7,12 +8,17 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequiredArgsConstructor
 @Builder
-public class Customer {
+public class Customer<T> {
 
-    private final Store store;
+    private final Store<T> store;
 
-    public boolean purchase(GameProduct product, int quantity) {
+    public boolean purchase(T product, int quantity) {
         log.info("Trying to purchase {} units of {}", quantity, product);
+
+        if (product == null) {
+            log.error("Purchase fail! invalid product: {}", product);
+            return false;
+        }
 
         if (quantity <= 0) {
             log.error("Purchase fail! Invalid quantity: {}", quantity);

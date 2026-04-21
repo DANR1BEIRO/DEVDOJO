@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZL_testes;
+package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.algorithms;
 
 import java.util.ArrayList;
 import java.util.List;

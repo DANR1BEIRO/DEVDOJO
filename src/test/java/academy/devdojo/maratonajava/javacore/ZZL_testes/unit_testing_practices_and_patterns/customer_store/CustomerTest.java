@@ -1,5 +1,8 @@
 package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store;
 
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.model.Customer;
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.model.GameProduct;
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.store.Store;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,10 +24,10 @@ import static org.mockito.ArgumentMatchers.anyInt;
 class CustomerTest {
 
     @Mock
-    Store storeMock;
+    Store<GameProduct> storeMock;
 
     @InjectMocks
-    Customer customer;
+    Customer<GameProduct> customer;
 
     @Test
     void purchase_succeeds_whenEnoughInvetory() {
@@ -57,11 +60,20 @@ class CustomerTest {
     @ValueSource(ints = {0, -1, -10, -100})
     void purchase_returnFalse_whenQuantityIsZeroOrNegative(int invalidQuantity) {
 
-        boolean purchase = customer.purchase(GameProduct.PLAYSTATION, invalidQuantity);
+        boolean result = customer.purchase(GameProduct.PLAYSTATION, invalidQuantity);
 
-        assertFalse(purchase);
+        assertFalse(result);
 
         Mockito.verify(storeMock, Mockito.never()).removeInventory(any(), anyInt());
+    }
 
+    @Test
+    void purchase_Fails_WhenProductIsNull() {
+
+        boolean result = customer.purchase(null, 10);
+
+        assertFalse(result);
+
+        Mockito.verify(storeMock, Mockito.never()).removeInventory(any(), anyInt());
     }
 }

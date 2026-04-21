@@ -1,5 +1,6 @@
 package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns;
 
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.algorithms.StringLength;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
