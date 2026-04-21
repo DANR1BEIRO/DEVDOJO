@@ -1,5 +1,8 @@
 package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.store;
 
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.AmountNegativeException;
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.AmountZeroException;
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.NullProductException;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;
@@ -11,12 +14,23 @@ public class AbstractStore<T> implements Store<T> {
 
     @Override
     public void addInventory(T product, int amount) {
+        if (product == null) {
+            throw new NullProductException();
+        }
+        if (amount == 0) {
+            throw new AmountZeroException();
+        }
+        if (amount < 0) {
+            throw new AmountNegativeException();
+        }
         inventory.put(product, inventory.getOrDefault(product, 0) + amount);
     }
 
     @Override
     public int getInventory(T product) {
-        log.info("Inventory: {}", inventory);
+        if (product == null) {
+            throw new NullProductException();
+        }
         return inventory.get(product);
     }
 
