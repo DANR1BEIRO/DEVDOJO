@@ -1,8 +1,8 @@
 package academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.store.impl;
 
-import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.NullProductException;
 import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.AmountNegativeException;
 import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.AmountZeroException;
+import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.exception.NullProductException;
 import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_and_patterns.customer_store.model.GameProduct;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -62,4 +62,27 @@ class GameStoreTest {
         assertEquals("Amount can't be negative", exception.getMessage());
     }
 
+    @Test
+    void getInventory_shouldReturnAmount_whenProductExists() {
+
+        gameStore.addInventory(GameProduct.PLAYSTATION, 10);
+        int amountOfProduct = gameStore.getInventory(GameProduct.PLAYSTATION);
+
+        assertEquals(10, amountOfProduct);
+    }
+
+    @Test
+    void getInventory_shouldThrowException_whenProductIsNull() {
+
+        assertThrows(NullProductException.class,
+                () -> gameStore.getInventory(null));
+    }
+
+    @Test
+    void getInventory_shouldReturnZero_whenProductDoesNotExist() {
+
+        int quantity = gameStore.getInventory(GameProduct.XBOX);
+
+        assertEquals(0, quantity);
+    }
 }

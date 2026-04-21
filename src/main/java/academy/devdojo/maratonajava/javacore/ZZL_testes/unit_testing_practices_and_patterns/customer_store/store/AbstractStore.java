@@ -31,7 +31,7 @@ public class AbstractStore<T> implements Store<T> {
         if (product == null) {
             throw new NullProductException();
         }
-        return inventory.get(product);
+        return inventory.getOrDefault(product, 0);
     }
 
     @Override
