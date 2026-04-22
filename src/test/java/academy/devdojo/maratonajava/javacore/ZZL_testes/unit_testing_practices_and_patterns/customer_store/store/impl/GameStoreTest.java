@@ -115,4 +115,20 @@ class GameStoreTest {
         assertThrows(NullProductException.class,
                 () -> gameStore.hasEnoughInventory(null, 1));
     }
+
+    @Test
+    void removeInventory_shouldSubtractAmount_whenInventoryIsSufficient() {
+        gameStore.addInventory(GameProduct.XBOX, 10);
+        gameStore.removeInventory(GameProduct.XBOX, 5);
+
+        assertEquals(5, gameStore.getInventory(GameProduct.XBOX));
+    }
+
+    @Test
+    void removeInventory_shouldNotChangeInventory_whenAmountIsGreaterThanInventory() {
+        gameStore.addInventory(GameProduct.XBOX, 10);
+        gameStore.removeInventory(GameProduct.XBOX, 20);
+
+        assertEquals(10, gameStore.getInventory(GameProduct.XBOX));
+    }
 }

@@ -42,7 +42,8 @@ public class AbstractStore<T> implements Store<T> {
     @Override
     public void removeInventory(T product, int amount) {
         if (hasEnoughInventory(product, amount)) {
-            inventory.remove(product, inventory.getOrDefault(product, 0) - amount);
+            int currentStock = getInventory(product);
+            inventory.put(product, currentStock - amount);
         }
     }
 
