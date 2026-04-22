@@ -7,8 +7,7 @@ import academy.devdojo.maratonajava.javacore.ZZL_testes.unit_testing_practices_a
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 // MethodName_State_ExpectedBehavior
 class GameStoreTest {
@@ -84,5 +83,36 @@ class GameStoreTest {
         int quantity = gameStore.getInventory(GameProduct.XBOX);
 
         assertEquals(0, quantity);
+    }
+
+    @Test
+    void hasEnoughInventory_shouldReturnTrue_whenAmountIsExactlyTheInventory() {
+
+        int quantity = 5;
+        gameStore.addInventory(GameProduct.XBOX, quantity);
+
+        assertTrue(gameStore.hasEnoughInventory(GameProduct.XBOX, quantity));
+    }
+
+    @Test
+    void hasEnoughInventory_shouldReturnTrue_whenInventoryIsGreaterThanAmount() {
+
+        gameStore.addInventory(GameProduct.XBOX, 400);
+
+        assertTrue(gameStore.hasEnoughInventory(GameProduct.XBOX, 200));
+    }
+
+    @Test
+    void hasEnoughInventory_shouldReturnFalse_whenAmountIsGreaterThanInventory() {
+
+        gameStore.addInventory(GameProduct.PLAYSTATION, 5);
+
+        assertFalse(gameStore.hasEnoughInventory(GameProduct.PLAYSTATION, 10));
+    }
+
+    @Test
+    void hasEnoughInventory_shouldThrowException_whenProductIsNull() {
+        assertThrows(NullProductException.class,
+                () -> gameStore.hasEnoughInventory(null, 1));
     }
 }

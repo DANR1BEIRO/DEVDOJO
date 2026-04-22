@@ -14,35 +14,51 @@ public class AbstractStore<T> implements Store<T> {
 
     @Override
     public void addInventory(T product, int amount) {
-        if (product == null) {
-            throw new NullProductException();
-        }
-        if (amount == 0) {
-            throw new AmountZeroException();
-        }
-        if (amount < 0) {
-            throw new AmountNegativeException();
-        }
+
+        validateProductNotNull(product);
+        validateAmountGreaterThanZero(amount);
+
         inventory.put(product, inventory.getOrDefault(product, 0) + amount);
     }
 
     @Override
     public int getInventory(T product) {
-        if (product == null) {
-            throw new NullProductException();
-        }
+
+        validateProductNotNull(product);
+
         return inventory.getOrDefault(product, 0);
     }
 
     @Override
     public boolean hasEnoughInventory(T product, int amount) {
-        return product != null && getInventory(product) >= amount;
+
+        validateProductNotNull(product);
+        validateAmountGreaterThanZero(amount);
+
+        int currentStock = getInventory(product);
+        return currentStock >= amount;
     }
 
     @Override
     public void removeInventory(T product, int amount) {
         if (hasEnoughInventory(product, amount)) {
             inventory.remove(product, inventory.getOrDefault(product, 0) - amount);
+        }
+    }
+
+    private void validateProductNotNull(T product) {
+        if (product == null) {
+            throw new NullProductException();
+        }
+    }
+
+    private void validateAmountGreaterThanZero(int amount) {
+        if (amount == 0) {
+            throw new AmountZeroException();
+        }
+
+        if (amount < 0) {
+            throw new AmountNegativeException();
         }
     }
 }
